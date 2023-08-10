@@ -1,10 +1,11 @@
 import React from "react"
+import Contact from "./Contact/Contact"
 
 function Footer(){
     return(
-        <>
-        This is Footer
-        </>
+        <div className="footer">
+        <Contact /> 
+        </div>
     )
 }
 
