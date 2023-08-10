@@ -11,7 +11,7 @@
 }
 
 .about-blurb {
-    padding-left: 40px;
+    padding: 0 40px 0 40px;
 }
 
 .about-headshot {
@@ -63,7 +63,5 @@
         margin-bottom: 20px;
     }
 
-    .about-blurb {
-        padding-right: 0;
-    }
+
 }
