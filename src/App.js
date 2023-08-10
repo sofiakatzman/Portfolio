@@ -10,18 +10,12 @@ function App() {
   return (
     <div>
       <Router>
-        <Header />
-
-        {/* No need to render Home here */}
-        {/* <Home /> */}
-        
+        <Header />        
         <Routes>
           <Route path="/projects" element={<Projects/>} />
           <Route path="/contactme" element={<ContactMe />} />
-          <Route path="/" element={<Home />} /> {/* Use "element" prop here */}
-        </Routes>
-
-        
+          <Route path="/" element={<Home />} /> 
+        </Routes>     
         <Footer />
       </Router>
     </div>
