@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './App.css'
 import Navigation from './components/Navigation'
 
 function App() {
@@ -8,7 +7,7 @@ function App() {
   return (
     <>
       <Navigation />
-      Testing
+      Testing - Testing 123. 
 
     </>
   )
