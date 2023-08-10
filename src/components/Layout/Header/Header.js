@@ -10,15 +10,19 @@ function Header(){
     const toggleNav = () => {
       setIsNavOpen(!isNavOpen)
     }
+
+    const hideNav = () => {
+      setIsNavOpen(false)
+    }
   
     return (
       <nav className="navbar">
         <div className="logo">Sofia Katzman</div>
         <div className={`nav-links ${isNavOpen ? 'active' : ''}`}>
          
-            <Link to="/">home</Link>
-            <Link to="/projects">projects</Link>
-            <Link to="/contactme">contact me</Link>
+            <Link onClick={hideNav} to="/">home</Link>
+            <Link onClick={hideNav} to="/projects">projects</Link>
+            <Link onClick={hideNav} to="/contactme">contact me</Link>
 
         </div>
         <div className="burger" onClick={toggleNav}>
