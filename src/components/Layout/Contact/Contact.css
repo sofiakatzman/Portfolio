@@ -1,0 +1,30 @@
+/* Contact.css */
+
+/* Style the contact container */
+.contact {
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px;
+  }
+  
+  .contact a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Style the contact images */
+  .contact img {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    border-radius: 50%; /* Make the image circular */
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  /* Button hover effect */
+  .contact:hover img {
+    transform: scale(1.2); /* Enlarge the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }

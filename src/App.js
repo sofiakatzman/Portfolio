@@ -1,7 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import About from "./components/Pages/About"
-import Contact from "./components/Layout/Contact"
 import Footer from "./components/Layout/Footer"
 import Header from "./components/Layout/Header/Header"
 import Home from "./components/Pages/Home"
@@ -23,7 +21,7 @@ function App() {
           <Route path="/" element={<Home />} /> {/* Use "element" prop here */}
         </Routes>
 
-        <Contact />
+        
         <Footer />
       </Router>
     </div>
