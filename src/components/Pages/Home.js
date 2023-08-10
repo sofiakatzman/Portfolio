@@ -1,10 +1,11 @@
 import React from "react"
+import About from "./About/About"
 
 function Home(){
     return(
-        <>
-        This is Home
-        </>
+        <div>
+            <About /> 
+        </div>
     )
 }
 
