@@ -16,7 +16,7 @@ function Header(){
     }
   
     return (
-      <nav className="navbar">
+      <nav className="header">
         <div className="logo">Sofia Katzman</div>
         <div className={`nav-links ${isNavOpen ? 'active' : ''}`}>
          

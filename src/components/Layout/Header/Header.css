@@ -1,24 +1,31 @@
 /* Header CSS */
-.navbar {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
     color: #333;
-    padding: 10px 20px;
+    padding: 20px 50px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 2px;
   }
   
   .logo {
-    font-size: 24px;
+    font-size: 36px;
     font-weight: bold;
   }
   
   .nav-links ul {
     list-style: none;
     display: flex;
-    gap: 20px;
-  }
+}
+
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 50px; /* Increase the margin for more spacing between links */
+    font-size: 26px;
+}
   
   .burger {
     display: none;
@@ -38,7 +45,7 @@
       display: none;
       flex-direction: column;
       position: absolute;
-      top: 50px;
+      top: 86px;
       left: 0;
       background-color: white;
       width: 100%;
@@ -50,13 +57,14 @@
     .nav-links ul {
       list-style: none;
       display: flex;
-       /* Increase the gap for more spacing between links */
+      
   }
   
     .nav-links a {
-      text-decoration: none; /* Remove underlines from links */
+      text-decoration: none;
       color: #333;
       line-height: 2;
+      
   }
   
     .nav-links.active {
