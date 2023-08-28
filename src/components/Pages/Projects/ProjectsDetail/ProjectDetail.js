@@ -14,33 +14,44 @@ function ProjectDetail() {
   }
 
   return (
-    <div className="project-detail">
-      <h1>{project.name}</h1>
-      <p>{project.summary}</p>
-      <p><i>{project.stack}</i></p>
-   
-      {/* Render other project details here */}
+    
+    <div className="">
+
       <div className="project-details">
-        <h2>Key Features</h2>
-        <ul>
-          {project.details.keyFeatures.map((feature, index) => (
-            <li key={index}>{feature}</li>
-          ))}
-        </ul>
-
-        <h2>Technology Stack</h2>
-        <ul>
-          {project.details.technologyStack.map((tech, index) => (
-            <li key={index}>{tech}</li>
-          ))}
-        </ul>
-
-        <h2>Achievements</h2>
-        <ul>
-          {project.details.achievements.map((achievement, index) => (
-            <li key={index}>{achievement}</li>
-          ))}
-        </ul>
+        <div className="project-header"> 
+          <div className="case-study-card"> 
+            <h1 className="project-name">{project.name}</h1>
+            <h2 className="project-case-study-header">CASE STUDY</h2>
+            <p className="project-case-study"><b>Problem: </b> {project.caseStudy.problem}</p>
+            <p className="project-case-study"><b>Solution: </b> {project.caseStudy.solution}</p>
+          </div>
+        </div>
+        <div className="project-features"> 
+          <h2>Key Features</h2>
+          <ul>
+            {project.details.keyFeatures.map((feature, index) => (
+              <li key={index}>{feature}</li>
+            ))}
+          </ul>
+            <br/>
+          <h2>Technology Stack</h2>
+          <ul>
+            {project.details.technologyStack.map((tech, index) => (
+              <li key={index}>{tech}</li>
+            ))}
+          </ul>
+        </div>
+    
+      
+   
+        <div className="project-achievements">
+          <h2>Achievements</h2>
+          <ul>
+            {project.details.achievements.map((achievement, index) => (
+              <li key={index}>{achievement}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   )

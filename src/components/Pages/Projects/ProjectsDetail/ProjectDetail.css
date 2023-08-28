@@ -27,3 +27,31 @@
   .project-details li {
     margin-bottom: 5px;
   }
+
+  .project-features {
+    background-color: var(--light-green);
+    padding: 5%;
+  }
+
+  .project-achievements{
+    background-color: var(--white);
+    padding: 5%;
+    margin-bottom: 100px;
+  }
+
+  .project-header{
+    padding: 5%;
+    background-color: var(--med-green)
+  }
+
+  h2.project-case-study-header{
+    color: var(--main-light);
+  }
+
+  h1.project-name {
+    color: var(--light-beige);
+  }
+
+  .project-case-study {
+    color: var(--light-green);
+  }

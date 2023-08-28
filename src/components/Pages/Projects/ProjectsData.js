@@ -31,7 +31,13 @@ const PROJECTSDATA = [
           "Incorporated React for an engaging and interactive front-end user experience.",
           "Integrated Websocket.io to provide real-time updates and interactions for users."
         ]
-      }
+      },
+      caseStudy: {
+        problem: "People often struggle with sharing their life accomplishments in a consolidated way.",
+        solution: "Milestones provides a platform where users can record and display their life milestones, creating a comprehensive timeline of their journey where others can learn about them in a more profound way.",
+        media: [
+          { type: "gif", url: "", alt: "Milestones Demo" }, //link project gifs here
+        ]}
     },
     {
       name: "RecycleQuest",
@@ -68,6 +74,14 @@ const PROJECTSDATA = [
           "Successfully created a gamified platform that bridges education and entertainment to enhance recycling awareness.",
           "Implemented a competitive gaming environment to engage and motivate users towards recycling practices."
         ]
+      },
+      caseStudy: {
+        problem: "Lack of recycling knowledge and engagement among users leads to low recycling rates.",
+        solution: "RecycleQuest gamifies recycling education, fostering engagement and competition among users to promote recycling practices.",
+        media: [
+          { type: "image", url: "", alt: "RecycleQuest Solution" }, //link project gifs here
+      
+        ]
       }
     },
     {
@@ -99,6 +113,13 @@ const PROJECTSDATA = [
           "Developed a versatile application for recording walks and bunny encounters.",
           "Created an interactive and user-friendly front-end interface using React.",
           "Implemented both mobile and web versions for enhanced user accessibility."
+        ]
+      }, 
+      caseStudy: {
+        problem: "My neighbors often wanted to keep track of their walks and encounters with bunnies within our community, but lack a centralized platform for recording and viewing this information.",
+        solution: "BunnyWalks provides a full-stack application that allows users to log their walks, paths, and bunny encounters, providing a convenient way to organize and review their experiences.",
+        media: [
+          { type: "image", url: "", alt: "BunnyWalks Solution" }, //link project gifs here
         ]
       }
     },
@@ -132,6 +153,13 @@ const PROJECTSDATA = [
           "Developed a CLI application for streamlined hiring and booking of event staff.",
           "Created an efficient data management system using SQLAlchemy and Alembic.",
           "Implemented a text-based design for interacting with the application."
+        ]
+      }, 
+      caseStudy: {
+        problem: "Event organizers often face challenges in efficiently booking and tracking event staff, leading to potential inefficiencies and miscommunications.",
+        solution: "EventManager simplifies the process of hiring and booking event staff through a CLI application, enabling organizers to manage staff-related tasks more effectively.",
+        media: [
+          { type: "image", url: "", alt: "EventManager Solution" },  //link project gifs here
         ]
       }
     }
