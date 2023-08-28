@@ -2,10 +2,12 @@ import React from "react"
 import { useParams } from "react-router-dom"
 import PROJECTSDATA from "../ProjectsData"
 import "./ProjectDetail.css"
+import MediaCover from "./Media/MediaCover"
 
 function ProjectDetail() {
   const { name } = useParams()
 
+  const text = "login walkthrough"
   // Find the project by name in the PROJECTSDATA array
   const project = PROJECTSDATA.find((proj) => proj.name === name)
 
@@ -16,9 +18,11 @@ function ProjectDetail() {
   return (
     
     <div className="">
-
+      
       <div className="project-details">
         <div className="project-header"> 
+        {/* <MediaCover text={text}/> */}
+
           <div className="case-study-card"> 
             <h1 className="project-name">{project.name}</h1>
             <h2 className="project-case-study-header">CASE STUDY</h2>
