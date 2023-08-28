@@ -51,9 +51,8 @@
 }
 
 .title {
-    font-weight: 400;
-    color: #474747;
+    font-weight: bold;
     letter-spacing: .2rem;
     text-align: center;
-    color: var(--main-orange);
+    color: var(--med-green);
   }

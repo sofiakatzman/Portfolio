@@ -31,6 +31,7 @@
 
 .project-card p {
     margin-bottom: 15px;
+    font-size: 1.2rem;
 }
 
 .project-card a {
@@ -110,4 +111,30 @@ span.project-technologies {
 a.live{
     background-color: var(--light-green);
     color: var(--main-green);
+}
+
+@media (max-width: 768px) {
+    .project-card h1 {
+        font-size: 1rem;
+    }
+
+    .h3 {
+        font-size: 0.7rem;
+    }
+
+    .project-card p {
+        font-size: 0.7rem;
+    }
+
+    .project-card a {
+        font-size: 0.5rem;
+    }
+
+    .project-technologies-container {
+        font-size: 0.5rem;
+    }
+
+    .buttons-container a {
+        font-size: 0.7em;
+    }
 }

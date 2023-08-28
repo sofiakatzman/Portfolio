@@ -19,14 +19,20 @@ body {
 h1 {
     font-size: 34px;
     font-weight: bold;
-    color: var(--med-orange);
+    color: var(--main-orange);
+    font-kerning: none;
+  }
+
+  h2 {
+    font-weight: bold;
   }
   
   h3 {
-    font-size: 26px;
+    /* font-size: 26px; */
     font-weight: 400;
     color: var(--med-green);
     margin-top: -10px;
+    
   }
   
   p {

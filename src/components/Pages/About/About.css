@@ -58,6 +58,19 @@
     font-weight: 300;
 }
 
+.resume{
+    background-color: var(--med-orange);
+    border-radius: 15px;
+    text-decoration: none;
+    color: var(--dark-green);
+    padding: 10px;
+}
+
+.resume:hover{
+    background-color: var(--med-green);
+    color: var(--light-green);
+
+}
 @media screen and (max-width: 768px) {
     .about-container {
         flex-direction: column;
