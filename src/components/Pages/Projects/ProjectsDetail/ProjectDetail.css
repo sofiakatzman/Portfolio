@@ -1,0 +1,29 @@
+.project-detail {
+    padding: 20px;
+  }
+  
+  .project-detail h1 {
+    color: var(--main-green);
+  }
+  
+  .project-detail p {
+    margin-bottom: 10px;
+  }
+  
+  .project-details {
+    margin-top: 20px;
+  }
+  
+  .project-details h2 {
+    color: var(--med-green);
+    margin-bottom: 10px;
+  }
+  
+  .project-details ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .project-details li {
+    margin-bottom: 5px;
+  }
