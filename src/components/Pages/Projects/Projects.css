@@ -1,0 +1,113 @@
+.projects{
+    margin-top: 80px;
+    margin-bottom: 250px;
+
+}
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch; 
+    margin: 20px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    background-color: white;
+    padding: 40px;
+    width: 400px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    height: 800px;
+}
+
+.project-card h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    margin-bottom: 15px;
+}
+
+.project-card a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    background-color: var(--med-green);
+    color: var(--white);
+    border-radius: 15px;
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.project-card a:hover {
+    background-color: var(--med-green);
+    color: white;
+}
+
+.project-card img {
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-technologies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between; 
+    width: 100%;
+}
+
+span.project-technologies {
+    background-color: var(--light-beige);
+    color: var(--main-green);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: auto; 
+    align-self: flex-start; 
+    width: 100%; 
+}
+
+.buttons-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-green);
+    color: var(--main-green);
+    border-radius: 15px;
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    flex-basis: calc(50% - 5px);
+    max-width: calc(50% - 5px);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.buttons-container a:hover {
+    background-color: var(--med-green);
+    color: var(--white);
+}
+
+a.live{
+    background-color: var(--light-green);
+    color: var(--main-green);
+}
