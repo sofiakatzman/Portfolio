@@ -13,8 +13,9 @@ function About(){
                 <div className="about-blurb">
                     <h2>Full Stack Web Developer</h2>
                     <h3>New York, NY </h3>
-                    <p>Hello! I'm Sofia, an artist turned software engineer.</p>
-                    <p>With my diverse background in operations, logistics, and design, I am able to craft innovative and eclectic solutions for all web development needs. </p>  
+                    <p>Hello! I'm Sofia - I build things.</p>
+                    <p>Whether it's full stack applications or diverse creative projects, my background in operations, logistics, and design enables me to craft well-rounded solutions that consider every aspect of the development process.</p>  
+                    <button>Download My Resume</button>
                 </div>
                 
             </div>
