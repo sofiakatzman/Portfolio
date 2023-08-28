@@ -18,7 +18,7 @@ function Projects() {
                     <img src={project.image} alt={`${project.name}Image`} /> 
                     <h1>{project.name.toUpperCase()}</h1><br/>
                     <h3>{project.summary}</h3>
-                    <p><i>{project.stack}</i></p>
+                    <p>{project.stack}</p>
                     <div className="buttons-container">
                     <a href={project.github}>GitHub</a>
                     <a href={project.walkthrough}>Demo</a>
