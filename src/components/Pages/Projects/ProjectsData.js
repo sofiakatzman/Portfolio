@@ -5,7 +5,7 @@ const PROJECTSDATA = [
       stack: "React front-end, Python backend with Flask API. Websocket.io integration for instant user updates. Bcrypt for user authentication and authorization. UseContext global state handling.",
       github: "https://github.com/sofiakatzman/Milestones",
       walkthrough: "https://www.youtube.com/watch?v=23grUYcH2Qw",
-      technologies: ["JavaScript", "React", "Python", "Flask", "HTML/CSS", "WebSocket.io", "Formik", "Bycrypt", "Gunicorn"],
+      technologies: ["JavaScript", "React", "Python", "Flask", , "Gunicorn", "HTML/CSS", "WebSocket.io", "Formik", "Bycrypt"],
       livedemo: false,
       image: "https://media.istockphoto.com/id/1276686973/vector/continuous-line-drawing-champagne-bottle.jpg?s=612x612&w=0&k=20&c=Osd_Q4WO5IYQXDnWt64ym--WiEh_9mwgNO90ppAf-9s=",
       details: {
