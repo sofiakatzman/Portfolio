@@ -5,7 +5,7 @@ const PROJECTSDATA = [
       stack: "React front-end, Python backend with Flask API. Websocket.io integration for instant user updates. Bcrypt for user authentication and authorization. UseContext global state handling.",
       github: "https://github.com/sofiakatzman/Milestones",
       walkthrough: "https://www.youtube.com/watch?v=23grUYcH2Qw",
-      technologies: ["JavaScript", "React", "Python", "Flask", "HTML", "CSS", "WebSocket.io"],
+      technologies: ["JavaScript", "React", "Python", "Flask", "HTML/CSS", "WebSocket.io", "Formik", "Bycrypt", "Gunicorn"],
       livedemo: false,
       image: "https://media.istockphoto.com/id/1276686973/vector/continuous-line-drawing-champagne-bottle.jpg?s=612x612&w=0&k=20&c=Osd_Q4WO5IYQXDnWt64ym--WiEh_9mwgNO90ppAf-9s=",
       details: {
@@ -45,7 +45,7 @@ const PROJECTSDATA = [
       stack: "React front-end, Ruby on Rails backend, deployed Postgres database and API. UseContext global state handling.",
       github: "https://github.com/elainedoud/RecycleQuest",
       walkthrough: "https://www.youtube.com/watch?v=X9x1nlTRcv0",
-      technologies: ["JavaScript", "React", "Ruby", "Rails", "HTML", "CSS"],
+      technologies: ["JavaScript", "React", "Ruby", "Rails", "HTML/CSS"],
       livedemo: "https://ruby-rails-blazer-part-ii.onrender.com/",
       image: "https://img.freepik.com/premium-vector/continuous-line-drawing-recycle-symbol-vector-illustration_500861-160.jpg",
       details: {
@@ -90,9 +90,9 @@ const PROJECTSDATA = [
       stack: "React front-end, Python backend with Flask API. Mobile and WebVersion available.",
       github: "https://github.com/sofiakatzman/Bunny-Walks.git",
       walkthrough: "https://www.youtube.com/watch?v=A9YwlcA_n5E",
-      technologies: ["JavaScript", "React", "Python", "Flask", "HTML", "CSS"],
+      technologies: ["JavaScript", "React", "Python", "Flask", "HTML/CSS"],
       livedemo: false,
-      image: "https://static.vecteezy.com/system/resources/previews/005/216/129/non_2x/continuous-line-drawing-of-cute-rabbit-single-one-line-art-of-beautiful-bunny-rabbit-animal-pet-illustration-free-vector.jpg",
+      image: "https://img.freepik.com/premium-vector/easter-bunny-continuous-one-line-drawing-minimalist-hand-drawn-illustration-isolated-element-vector_593228-160.jpg",
       details: {
         description: "BunnyWalks is a full-stack application designed to record walks, paths, and bunny encounters. The project features a React front-end and a Python backend with a Flask API. It offers both mobile and web versions for user convenience.",
         keyFeatures: [
