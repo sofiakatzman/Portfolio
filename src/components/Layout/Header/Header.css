@@ -78,4 +78,12 @@
     .burger {
       display: flex;
     }
+
+    div.logo{
+      margin-left: 0;
+    }
+
+    .header {
+      padding: 5px 30px;
+    }
   }

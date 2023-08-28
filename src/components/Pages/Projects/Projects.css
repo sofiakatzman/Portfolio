@@ -24,7 +24,7 @@
     height: 800px;
 }
 
-.project-card h1 {
+.project-card h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
@@ -94,7 +94,7 @@ span.project-technologies {
     align-items: center;
     justify-content: center;
     background-color: var(--light-green);
-    color: var(--main-green);
+    color: var(--med-green);
     border-radius: 15px;
     padding: 8px 15px;
     transition: background-color 0.3s, color 0.3s;
@@ -126,20 +126,20 @@ a.view-case-study:hover {
 }
 
 @media (max-width: 768px) {
-    .project-card h1 {
+    .project-card h2 {
         font-size: 1rem;
     }
 
     .h3 {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .project-card p {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .project-card a {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
 
     .project-technologies-container {
