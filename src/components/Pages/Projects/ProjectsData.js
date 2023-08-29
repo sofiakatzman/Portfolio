@@ -41,7 +41,7 @@ const PROJECTSDATA = [
     },
     {
       name: "RecycleQuest",
-      summary: "A gamified social platform aimed at increasing recycling knowledge and awareness, as well as creating a competitive and engaging environment to promote contributions. 'Girls in Tech: Hack for the Environment' hackathon entry. ",
+      summary: "A gamified social platform aimed at increasing recycling knowledge and awareness, as well as creating a competitive and engaging environment to promote contributions. ",
       stack: "React front-end, Ruby on Rails backend, deployed Postgres database and API. UseContext global state handling.",
       github: "https://github.com/elainedoud/RecycleQuest",
       walkthrough: "https://www.youtube.com/watch?v=X9x1nlTRcv0",
@@ -126,7 +126,7 @@ const PROJECTSDATA = [
     {
       name: "EventManager",
       summary: "A Command Line Interface Application designed to streamline the process of hiring and booking event staff.",
-      stack: "Python backend with SQLAlchemy database. No GUI, text-based design.",
+      stack: "Python backend with SQLAlchemy database. No GUI; entirely designed using text and special characters. ",
       github: "https://github.com/sofiakatzman/Event-Manager",
       walkthrough: "https://www.youtube.com/watch?v=AS7z6d3M1Qc",
       technologies: ["Python", "SQL", "SQLAlchemy", "CLI", "Alembic"],

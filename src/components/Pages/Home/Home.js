@@ -7,7 +7,7 @@ function Home(){
     return(
         <div>
             <About /> 
-            <Technologies />
+            <Technologies /> <br/>
             <Projects />
         </div>
     )
