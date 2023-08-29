@@ -2,6 +2,7 @@ import React from "react"
 import './About.css'
 import headshot from '../../../assets/headshot.jpg'
 import resume from '../../../assets/Sofia_Katzman_Resume.pdf'
+import Contact from '../../Layout/Contact/Contact'
 
 function About(){
 
@@ -19,7 +20,6 @@ function About(){
                     <br/><br/><br/>
                     <a href={resume} download className="resume">Download My Resume</a>
                 </div>
-                
             </div>
         </div>
 
