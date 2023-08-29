@@ -9,6 +9,22 @@ import ProjectDetail from './components/Pages/Projects/ProjectsDetail/ProjectDet
 
 
 function App() {
+  
+  //scrolling navigation hide/view event listener
+  let prevScrollPos = window.pageYOffset
+
+  window.addEventListener("scroll", () => { 
+    const currentScrollPos = window.pageYOffset
+
+    if (prevScrollPos > currentScrollPos) {
+      document.querySelector(".footer").classList.remove("hide")
+    } else {
+      document.querySelector(".footer").classList.add("hide")
+    }
+
+    prevScrollPos = currentScrollPos
+
+})
   return (
     <div>
       <Router>
