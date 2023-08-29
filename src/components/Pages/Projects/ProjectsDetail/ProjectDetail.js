@@ -14,9 +14,6 @@ function ProjectDetail() {
   }
 
   return (
-    
-    <div className="">
-
       <div className="project-details">
         <div className="project-header"> 
           <div className="case-study-card"> 
@@ -53,7 +50,6 @@ function ProjectDetail() {
           </ul>
         </div>
       </div>
-    </div>
   )
 }
 
