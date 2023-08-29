@@ -22,7 +22,7 @@ function Projects() {
                 <div className="project-card" key={project.name}>
                   
                     <img src={project.image} alt={`${project.name}Image`} /> 
-                    <h2>{project.name.toUpperCase()}</h2><br/>
+                    <h2 className="project-name">{project.name.toUpperCase()}</h2><br/>
                     <h3>{project.summary}</h3>
                     <p>{project.stack}</p>
 
@@ -45,7 +45,7 @@ function Projects() {
                         className="view-case-study"
                         >
                         Case Study
-                    </Link> <br/>
+                    </Link> 
 
                 </div>
             ))}

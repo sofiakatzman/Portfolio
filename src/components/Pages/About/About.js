@@ -16,7 +16,7 @@ function About(){
                     <h3>New York, NY </h3>
                     <p>Hello! I'm Sofia - I build things.</p>
                     <p>Whether it's full stack applications or diverse creative projects, my background in operations, logistics, and design enables me to craft well-rounded solutions that consider every aspect of the development process.</p>  
-                    <br/>
+                    <br/><br/><br/>
                     <a href={resume} download className="resume">Download My Resume</a>
                 </div>
                 

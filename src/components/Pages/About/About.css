@@ -5,9 +5,9 @@
     justify-content: center;
     align-items: center;
     max-width: 85%;
-    margin: -10 auto;
+    /* margin: -10 auto; */
     box-sizing: border-box;
-    padding: 150px 0;
+    padding: 100px 0;
 }
 
 .about-container > div {
@@ -16,7 +16,7 @@
 }
 
 .about-headshot {
-    text-align: center;
+    text-align: right;
 }
 
 .circle-image {

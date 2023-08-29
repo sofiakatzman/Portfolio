@@ -14,11 +14,15 @@
     margin-top: 20px;
   }
   
-  .project-details h2 {
+  /* .project-details h2 {
     color: var(--med-green);
     margin-bottom: 10px;
   }
-  
+   */
+  h2.project-name{
+    color: var(--main-orange);
+    font-size: 20px;
+  }
   .project-details ul {
     list-style: disc;
     margin-left: 20px;

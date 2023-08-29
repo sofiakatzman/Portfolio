@@ -4,7 +4,7 @@
 /* Style the technologies container */
 .technologies {
     background:  white;
-    padding: 50px 20px 80px 20px;
+    padding: 30px 20px;
 }
 .technologies-container {
     display: flex;
