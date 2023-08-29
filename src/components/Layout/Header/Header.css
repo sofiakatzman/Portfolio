@@ -10,7 +10,7 @@
     padding: 10px 30px 15px 30px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     font-size: 2px;
-  
+
   }
   
   .logo {
@@ -74,6 +74,7 @@
   
     .nav-links.active {
       display: flex;
+      
     }
   
     .burger {

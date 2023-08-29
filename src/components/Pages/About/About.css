@@ -12,7 +12,7 @@
 
 .about-container > div {
     flex: 1;
-    padding: 20px 50px;
+    padding: 50px;
 }
 
 .about-headshot {
@@ -74,8 +74,10 @@
 @media screen and (max-width: 768px) {
     .about-container {
         flex-direction: column;
-        padding: 30px 50px;
+        padding: 50px 50px 80px 50px;
         max-width: 100%;
+        
+        /* text-align: center; */
     }
 
     .about-container > div {
