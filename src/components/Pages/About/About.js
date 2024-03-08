@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 function About(){
 
     const redirectToDesign = () => {
-        window.location.href = 'https://sofia-katzman-design-04eb286d966b.herokuapp.com/';
+        window.location.href = 'https://www.sofiakatzman.com/';
       };
 
     return(
