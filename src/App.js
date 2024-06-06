@@ -1,41 +1,40 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Footer from "./components/Layout/Footer/Footer"
-import Header from "./components/Layout/Header/Header"
-import Home from "./components/Pages/Home/Home"
-import Projects from "./components/Pages/Projects/Projects"
-import ContactMe from './components/Pages/ContactMe/ContactMe'
-import ProjectDetail from './components/Pages/Projects/ProjectsDetail/ProjectDetail'
-
+import Home from './components/Layout/Home'
+import './App.css';
 
 function App() {
-  
-  //scrolling navigation hide/view event listener
-  let prevScrollPos = window.pageYOffset
 
-  window.addEventListener("scroll", () => { 
-    const currentScrollPos = window.pageYOffset
-
-    if (prevScrollPos > currentScrollPos) {
-      document.querySelector(".footer").classList.remove("hide")
-    } else {
-      document.querySelector(".footer").classList.add("hide")
-    }
-
-    prevScrollPos = currentScrollPos
-
-})
   return (
     <div>
+      <img class="hero" src="https://www.sofiakatzman.com/static/media/bikeriding.cb53f374965a1756e6d7.gif" alt="hero"/>
+      <div class="heading"><h1>Sofia Katzman</h1></div>
+      <div class="navdiv">
+      <div class="navigation"><h2>Designer and Developer</h2></div>
+        <div class="curtain">
+              <div class="links">
+                  <div class="link">Link 1</div>
+                  <div class="link">Link 2</div>
+                  <div class="link">Link</div>
+              </div>
+          </div>
+        </div>
+      <div class="blurb">
+        <p>Driven by passion, I've evolved from an operations manager to a designer, and now to a software engineer.</p>
+        <p>As a production designer at Scholastic, I craft design systems, build emails, and develop operational tools, while also working in DevOps and AI marketing part-time. </p>
+        <p>At the crossroads of creativity and technology, I'm dedicated to continuously learning and delivering top solutions for my clients.</p>
+      </div>
+
+      
       <Router>
-        <Header />        
+   
         <Routes>
-          <Route path="/projects" element={<Projects />} />
+          {/* <Route path="/projects" element={<Projects />} />
           <Route path="/project/:name" element={<ProjectDetail />} />
-          <Route path="/contactme" element={<ContactMe />} />
+          <Route path="/contactme" element={<ContactMe />} /> */}
           <Route path="/" element={<Home />} /> 
         </Routes>     
-        <Footer />
+
       </Router>
     </div>
   )
