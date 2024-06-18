@@ -24,12 +24,12 @@ function Skills() {
 
   return (
     <div id="skills">
-      <h2>Skills</h2>
+      <h1 className="small">Skills</h1>
       <div className="skills-container">
         {skills.map((skill, index) => (
           <button key={index} className="skill-button">
             <img src={skill.icon} alt={skill.alt} className="skill-icon" />
-            <span>{skill.title}</span>
+            <p className="bold">{skill.title}</p>
           </button>
         ))}
       </div>

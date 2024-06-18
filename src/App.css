@@ -11,18 +11,21 @@ body {
   background-color: var(--white);
   font-family: 'MonteBold';
   color: var(--navy);
+  padding: 36px;
 }
 
 h1 {
   font-family: 'TropiLand';
   font-size: 34px;
   letter-spacing: 1.5px;
+  text-align: center;
 }
 
 h1.small {
   font-family: 'TropiLand';
   font-size: 28px;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 h2 {
@@ -45,3 +48,117 @@ p {
   letter-spacing: .5px;
 }
 
+p.bold{
+  font-family: 'MonteBold';
+  font-size: 14px;
+}
+
+/* NAVIGATION */
+.navigation-container {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation-button {
+  padding: 15px;
+  border: 2.5px solid var(--navy);
+  border-radius: 40px;
+  text-align: center;
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+  width: 138px;
+}
+
+.navigation-button:hover {
+  background-color: var(--lime); 
+}
+
+.navigation-button a,
+.navigation-button a:visited {
+  text-decoration: none;
+  color: inherit; 
+}
+
+
+/* SKILLS */
+
+.skills-container{
+  display: flex;
+  gap: 36px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.skill-button{
+  padding: 10px 10px 0px 10px;
+  border: 2.5px solid var(--navy);
+  border-radius: 40px;
+  text-align: center;
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+  width: 100px;
+  color: var(--navy);
+  background-color: var(--lime); 
+}
+
+
+.skill-button:hover {
+  background-color: var(--lilac); 
+}
+
+.skill-button a,
+.skill-button a:visited {
+  text-decoration: none;
+  color: inherit; 
+}
+
+.skill-icon{
+  height: 36px;
+}
+
+/* ABOUT ME */
+
+.about-header{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* WORK SNIP */
+
+.work{
+  background-color: var(--gray);
+  padding: 30px;
+}
+
+.work-container{
+  padding: 30px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+.work-button{
+  padding: 30px 40px 20px 40px;
+  border: 2.5px solid var(--navy);
+  border-radius: 40px;
+  text-align: center;
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+  color: var(--navy);
+  background-color: var(--white); 
+}
+
+.work-button:hover {
+  background-color: var(--lilac); 
+}
+
+.work-button a,
+.work-button a:visited {
+  text-decoration: none;
+  color: inherit; 
+}

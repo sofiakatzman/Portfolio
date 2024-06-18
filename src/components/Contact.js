@@ -39,7 +39,7 @@ function Contact() {
   return (
     <div>
       <div>
-        <h2>Contact Me</h2>
+        <h1 className="small">Contact Me</h1>
         <p>Ready to get started?</p>
         <p>
           Fill out the form below, and I'll get back to you as soon as possible!

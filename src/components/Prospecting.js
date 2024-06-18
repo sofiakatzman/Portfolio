@@ -3,7 +3,7 @@ import React from "react";
 function Prospecting() {
   return (
     <div>
-      <h2>Need help?</h2>
+      <h1 className="small">Need help?</h1>
       <p>
         Ready to use my versatile skill set, I'm here to help you reach and
         surpass your goals!With equipped with mastery in design, development,

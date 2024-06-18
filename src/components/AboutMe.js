@@ -1,9 +1,16 @@
 import React from "react";
+import asterisk from "../assets/asterisk.svg";
 
 function AboutMe() {
+  const doodle = <img src={asterisk} alt="asterisk doodle" />;
+
   return (
     <div id="about">
-      <h2>About Me</h2>
+      <div className="about-header">
+        {doodle}
+        <h1 className="small">about me</h1>
+        {doodle}
+      </div>
       <p>
         Driven by my passions, I've transitioned from operations management to
         design, and now to software engineering. This journey has equipped me
