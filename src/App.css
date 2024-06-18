@@ -14,11 +14,19 @@ body {
   padding: 36px;
 }
 
+
 h1 {
   font-family: 'TropiLand';
   font-size: 34px;
   letter-spacing: 1.5px;
   text-align: center;
+}
+
+h1.hero {
+  font-size: 48px;
+  letter-spacing: 1.5px;
+  text-align: left;
+  margin: 0px;
 }
 
 h1.small {
@@ -52,6 +60,21 @@ p.bold{
   font-family: 'MonteBold';
   font-size: 14px;
 }
+/* INTRO */
+.SK-icon {
+  max-width: 15%; 
+  position: absolute; 
+  top: 40px; 
+  right: 50px; 
+}
+
+.background-flower {
+  position: absolute; 
+  top: -100px;
+  left: -100px; 
+  z-index: -1; 
+  width: 120%;
+}
 
 /* NAVIGATION */
 .navigation-container {
@@ -70,6 +93,7 @@ p.bold{
   cursor: pointer; 
   transition: all 0.3s ease; 
   width: 138px;
+  background-color: var(--white);
 }
 
 .navigation-button:hover {
