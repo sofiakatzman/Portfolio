@@ -21,7 +21,7 @@ code {
 
 @font-face {
   font-family: 'MonteBold';
-  src: local('MonteBold'), url(../public/fonts/MontserratAlternates-ExtraBold.ttf) format('truetype');
+  src: local('MonteBold'), url(../public/fonts/MontserratAlternates-Bold.ttf) format('truetype');
 }
 
 @font-face {
