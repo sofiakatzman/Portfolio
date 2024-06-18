@@ -14,4 +14,27 @@ code {
     monospace;
 }
 
+@font-face {
+  font-family: 'TropiLand';
+  src: local('TropiLand'), url(../public/fonts/TropiLand-L3MPg.ttf) format('truetype');
+}
 
+@font-face {
+  font-family: 'MonteBold';
+  src: local('MonteBold'), url(../public/fonts/MontserratAlternates-ExtraBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'MonteSemi';
+  src: local('MonteSemi'), url(../public/fonts/MontserratAlternates-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Monte';
+  src: local('Monte'), url(../public/fonts/MontserratAlternates-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'MonteMed';
+  src: local('MonteMed'), url(../public/fonts/MontserratAlternates-Medium.ttf) format('truetype');
+}
