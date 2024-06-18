@@ -6,7 +6,7 @@ function AboutMe() {
 
   return (
     <div id="about">
-      <div className="about-header">
+      <div className="header">
         {doodle}
         <h1 className="small">about me</h1>
         {doodle}

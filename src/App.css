@@ -122,7 +122,7 @@ p.bold{
 
 /* ABOUT ME */
 
-.about-header{
+.header{
   display: flex;
   gap: 10px;
   justify-content: center;
