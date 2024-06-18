@@ -1,5 +1,6 @@
 import React from "react";
 import bullet from "../assets/bulletpoint.svg";
+import SK from "../assets/sk.svg";
 
 function Footer() {
   // Example data for footer links
@@ -23,6 +24,7 @@ function Footer() {
 
   return (
     <div className="footer">
+      <img src={SK} alt="SK icon" />
       {Object.keys(footerLinks).map((sectionTitle, index) => (
         <div key={index} className="footer-section">
           <h3>{sectionTitle}</h3>
