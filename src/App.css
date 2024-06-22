@@ -211,7 +211,6 @@ p.bold{
 }
 
 /* WORK SNIP */
-
 .work{
   background-color: var(--gray);
   padding: 30px;
@@ -346,6 +345,56 @@ p.bold{
   transform: rotate(0deg); 
 }
 
+/* FOOTER */
+.footer {
+  position: relative;
+  width: 100%;
+  padding-top: 60px; /* Add padding to ensure content doesn't overlap with the scallop image */
+}
+
+.footer-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  z-index: 1; 
+  background-color: var(--lilac);
+}
+
+.footer-section {
+  flex: 1 1 200px; 
+  margin: 10px;
+}
+
+.scallop {
+  position: absolute;
+  /* top: -60%; for web */ 
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.bullet-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bullet-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.bullet-list-item img {
+  margin-right: 10px;
+}
+
+.bullet-list-item a {
+  text-decoration: none;
+  color: var(--navy); 
+}
 /* SCROLLBAR STYLING */
 ::-webkit-scrollbar {
   width: 8px; /* Width of the scrollbar */

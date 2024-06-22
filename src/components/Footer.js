@@ -1,8 +1,8 @@
 import React from "react";
 import bullet from "../assets/bulletpoint.svg";
+import scallop from "../assets/footerscallop.svg";
 
 function Footer() {
-  // Example data for footer links
   const footerLinks = {
     Navigate: [
       { text: "Skills", url: "#skills" },
@@ -23,19 +23,22 @@ function Footer() {
 
   return (
     <div className="footer">
-      {Object.keys(footerLinks).map((sectionTitle, index) => (
-        <div key={index} className="footer-section">
-          <h3>{sectionTitle}</h3>
-          <div className="bullet-list">
-            {footerLinks[sectionTitle].map((link, index) => (
-              <div key={index} className="bullet-list-item">
-                <img src={bullet} alt="+" />
-                <a href={link.url}>{link.text}</a>
-              </div>
-            ))}
-          </div>
-        </div>
-      ))}
+      <img src={scallop} alt="Flower Scallop Border" className="scallop" />
+      <div className="footer-sections">
+        {Object.keys(footerLinks).map((sectionTitle, index) => (
+          <footer key={index} className="footer-section">
+            <h3>{sectionTitle}</h3>
+            <div className="bullet-list">
+              {footerLinks[sectionTitle].map((link, index) => (
+                <div key={index} className="bullet-list-item">
+                  <img src={bullet} alt="+" />
+                  <a href={link.url}>{link.text}</a>
+                </div>
+              ))}
+            </div>
+          </footer>
+        ))}
+      </div>
     </div>
   );
 }
