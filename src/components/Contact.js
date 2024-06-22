@@ -1,6 +1,6 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import ornament from "../assets/ornament.svg"; // Import your ornament images
 
 function Contact() {
   const [fromName, setFromName] = useState("");
@@ -36,44 +36,72 @@ function Contact() {
         console.error("Error sending email:", error);
       });
   };
+
   return (
     <div>
-      <div>
-        <h1 className="small">Contact Me</h1>
-        <p>Ready to get started?</p>
+      <div className="contact-form">
+        {/* Ornament images */}
+        <img
+          src={ornament}
+          alt="Top Left Ornament"
+          className="ornament top-left"
+        />
+        <img
+          src={ornament}
+          alt="Top Right Ornament"
+          className="ornament top-right"
+        />
+        <img
+          src={ornament}
+          alt="Bottom Left Ornament"
+          className="ornament bottom-left"
+        />
+        <img
+          src={ornament}
+          alt="Bottom Right Ornament"
+          className="ornament bottom-right"
+        />
+
+        <h1>Contact Me</h1>
+        <p>
+          <b>Ready to get started?</b>
+        </p>
         <p>
           Fill out the form below, and I'll get back to you as soon as possible!
         </p>
         <div className="email-form-container">
           <div className="email-form">
             <form onSubmit={handleSubmit}>
-              <label>
-                name:
-                <input
-                  type="text"
-                  value={fromName}
-                  onChange={(e) => setFromName(e.target.value)}
-                  required
-                />
-              </label>
-              <label>
-                email address:
-                <input
-                  type="email"
-                  value={fromEmail}
-                  onChange={(e) => setFromEmail(e.target.value)}
-                  required
-                />
-              </label>
-              <label>
-                message:
-                <textarea
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  required
-                />
-              </label>
-              <button type="submit">submit</button>
+              <label>Full Name:</label>
+              <input
+                className="form-input"
+                type="text"
+                value={fromName}
+                onChange={(e) => setFromName(e.target.value)}
+                required
+                placeholder="Jane Doe"
+              />
+
+              <label>Email Address:</label>
+              <input
+                type="email"
+                className="form-input"
+                value={fromEmail}
+                onChange={(e) => setFromEmail(e.target.value)}
+                required
+                placeholder="name@email.com"
+              />
+
+              <label>Message:</label>
+              <textarea
+                value={message}
+                className="form-input"
+                onChange={(e) => setMessage(e.target.value)}
+                required
+                placeholder="Let's work together!"
+              />
+
+              <button type="submit">Submit</button>
             </form>
           </div>
         </div>
