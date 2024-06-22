@@ -5,13 +5,14 @@
   --lilac: #E8D7EA;
   --white: #F5F3EF;
   --gray: #DEDCD9;
+
 }
 
 body {
   background-color: var(--white);
   font-family: 'MonteBold';
   color: var(--navy);
-  padding: 36px;
+  width: 480px;
 }
 
 
@@ -114,7 +115,6 @@ p.bold{
   gap: 36px;
   align-items: center;
   justify-content: center;
-  
 }
 
 .skill-button{
@@ -144,6 +144,45 @@ p.bold{
   height: 36px;
 }
 
+/* SKILLS POPUP */
+.skills-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 80%;
+  height: 40%;
+  background-color: var(--lilac);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  border: solid;
+  border-width: 2.5px;
+  border-color: var(--navy);
+  border-radius: 40px;
+  overflow: auto;
+}
+
+.popup-content {
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--lime);
+  background-color: var(--navy);
+  border-radius: 40px;
+  padding: 5px 10px;
+}
 /* ABOUT ME */
 
 .header{
@@ -185,4 +224,22 @@ p.bold{
 .work-button a:visited {
   text-decoration: none;
   color: inherit; 
+}
+
+/* SCROLLBAR STYLING */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--white);
+  border-radius: 50px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--navy); 
 }
