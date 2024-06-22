@@ -51,7 +51,7 @@ const skills = [
     },
   },
   {
-    title: "Development",
+    title: "Dev",
     icon: dev_icon,
     alt: "development icon - mouse cursor",
     data: {
@@ -104,7 +104,7 @@ const skills = [
     },
   },
   {
-    title: "Operations",
+    title: "Ops",
     icon: ops_icon,
     alt: "operations icon - magic wand",
     data: {
