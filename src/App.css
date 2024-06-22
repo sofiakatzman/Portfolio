@@ -256,6 +256,7 @@ p.bold{
   max-width: 600px; 
   margin: 0 auto; 
   position: relative;
+  min-height: 625px;
 }
 
 .email-form label {
@@ -303,6 +304,15 @@ p.bold{
 
 .form-input {
   padding-top: 10px;
+}
+
+.confirmation-message {
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+  width:100%;
+  display: block;
 }
 
 /* Ornament positioning */
