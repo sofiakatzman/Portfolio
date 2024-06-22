@@ -256,7 +256,7 @@ p.bold{
   max-width: 600px; 
   margin: 0 auto; 
   position: relative;
-  min-height: 625px;
+  min-height: 600px;
 }
 
 .email-form label {
