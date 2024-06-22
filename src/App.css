@@ -345,6 +345,14 @@ p.bold{
   transform: rotate(0deg); 
 }
 
+/* SIGNOFF */
+.signoff-container{
+  display: grid;
+  place-items: center;
+  padding: 50px;}
+.sk{
+  max-width: 30%;
+}
 /* FOOTER */
 .footer {
   position: relative;

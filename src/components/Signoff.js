@@ -3,8 +3,8 @@ import SK from "../assets/sk.svg";
 
 function Signoff() {
   return (
-    <div>
-      <img src={SK} alt="SK icon" />
+    <div className="signoff-container">
+      <img src={SK} alt="SK icon" className="sk" />
     </div>
   );
 }
