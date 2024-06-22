@@ -6,7 +6,7 @@ function Contact() {
   const [fromName, setFromName] = useState("");
   const [fromEmail, setFromEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [showConfirmation, setShowConfirmation] = useState(true);
+  const [showConfirmation, setShowConfirmation] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
