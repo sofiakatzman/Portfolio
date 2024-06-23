@@ -9,15 +9,14 @@ const LoadingScreen = () => {
         left: 0,
         width: "100%",
         height: "100%",
-        background: "#fff", // Replace with your preferred background color or image
+        background: "#fff",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        zIndex: 9999, // Ensure it appears above other content
+        zIndex: 9999,
       }}
     >
       <h2>Loading...</h2>
-      {/* You can add a spinner or any other loading animation here */}
     </div>
   );
 };
