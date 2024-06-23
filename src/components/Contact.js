@@ -41,7 +41,7 @@ function Contact() {
   };
 
   return (
-    <div>
+    <div className="contact-container">
       <div className="contact-form">
         {/* Ornament images */}
         <img src={ornament} alt="Ornament" className="ornament top-left" />

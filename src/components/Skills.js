@@ -7,14 +7,21 @@ function Skills() {
   const [popupContent, setPopupContent] = useState("");
 
   const handleSkillClick = (title) => {
-    // Change parameter name to title
-    setPopupContent(title); // Set the title directly
+    setPopupContent(title);
     setShowPopup(true);
+    scrollToTop();
   };
 
   const closePopup = () => {
     setShowPopup(false);
     setPopupContent("");
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -25,7 +32,7 @@ function Skills() {
           <button
             key={index}
             className="skill-button"
-            onClick={() => handleSkillClick(skill.title)} // Pass skill.title
+            onClick={() => handleSkillClick(skill.title)}
           >
             <img src={skill.icon} alt={skill.alt} className="skill-icon" />
             <p className="bold">{skill.title}</p>
