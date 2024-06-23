@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Popup from "./Popup";
-import skills from "../assets/skills";
+import SKILLS from "../assets/skills";
 
 function Skills() {
   const [showPopup, setShowPopup] = useState(false);
@@ -26,9 +26,9 @@ function Skills() {
 
   return (
     <div id="skills">
-      <h1 className="small">Skills</h1>
+      <h1 className="small">SKillS</h1>
       <div className="skills-container">
-        {skills.map((skill, index) => (
+        {SKILLS.map((skill, index) => (
           <button
             key={index}
             className="skill-button"

@@ -27,7 +27,7 @@ import technology_invision_icon from "../assets/technologies/design/Invision.svg
 // import technology_im_icon from "../assets/technologies/ops/inventorymanagement.svg";
 // import technology_excel_icon from "../assets/technologies/ops/excel.svg";
 
-const skills = [
+const SKILLS = [
   {
     title: "Design",
     icon: design_icon,
@@ -183,7 +183,7 @@ const skills = [
   },
 ];
 
-export default skills;
+export default SKILLS;
 
 // saving for when the svgs for each icon are uploaded - to bypass react error
 // const skills = [
