@@ -65,11 +65,11 @@ const TimelineData = [
   {
     id: 8,
     aspect_id: "work",
-    date: "2019-03-01",
+    date: "2020-06-01",
     header: "Switching Lanes - Design",
     subheader: "Freelance",
     description:
-      "Shifted careers to freelance design before COVID-19. Stayed fully employed throughout the pandemic, working on diverse projects like hanging from two-story-high scaffoldings and fabricating 9-foot UFOs.",
+      "Shifted careers to freelance design during peak COVID-19. Stayed fully employed throughout the pandemic, working on diverse projects like hanging from two-story-high scaffoldings and fabricating 9-foot UFOs.",
   },
   {
     id: 9,
