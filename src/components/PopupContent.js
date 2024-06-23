@@ -1,10 +1,10 @@
 import React from "react";
-import skills from "../assets/skills";
+import SKILLS from "../assets/skills";
 import bullet from "../assets/bulletpoint.svg";
 import Technology from "./Technology";
 
 function PopupContent({ content }) {
-  const skill = skills.find((skill) => skill.title.toString() === content);
+  const skill = SKILLS.find((skill) => skill.title.toString() === content);
 
   if (!skill) {
     return (
