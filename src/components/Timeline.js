@@ -41,73 +41,67 @@ function Timeline() {
 
   return (
     <div>
-      <div
-        style={{ marginBottom: "10px", display: "flex", alignItems: "center" }}
-      >
-        {Object.keys(aspectIcons).map((aspectId) => (
-          <button
-            key={aspectId}
-            onClick={() => setFilter(aspectId === filter ? "all" : aspectId)}
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              marginRight: "10px",
-              border: "none",
-              background: "none",
-              minWidth: "50px",
-              cursor: "pointer",
-            }}
-          >
-            <img
-              src={aspectIcons[aspectId].icon}
-              alt={aspectId}
-              style={{ width: "40px", height: "40px", marginBottom: "5px" }}
-            />
-            <span style={{ fontSize: "12px" }}>
-              {aspectIcons[aspectId].label}
-            </span>
-          </button>
-        ))}
+      <div className="filter-parent">
+        <div className="filter-container">
+          {Object.keys(aspectIcons).map((aspectId) => (
+            <button
+              key={aspectId}
+              onClick={() => setFilter(aspectId === filter ? "all" : aspectId)}
+              className="filter-button"
+            >
+              <img
+                src={aspectIcons[aspectId].icon}
+                alt={aspectId}
+                className="filter-icon"
+              />
+              <span className="filter-label">
+                {aspectIcons[aspectId].label}
+              </span>
+            </button>
+          ))}
+        </div>
       </div>
-
-      <div
-        style={{ marginBottom: "10px", display: "flex", alignItems: "center" }}
-      >
-        <span style={{ marginRight: "10px" }}>Sort Order:</span>
-        <button
-          onClick={toggleSortOrder}
-          style={{
-            border: "none",
-            background: "none",
-            cursor: "pointer",
-            marginRight: "10px",
-          }}
-        >
+      <div className="sort-container">
+        <span className="sort-label"></span>
+        <div className="sort-text">
+          {sortOrder === "asc"
+            ? "Sorted by Past to Present"
+            : "Sorted by Present to Past"}
+        </div>{" "}
+        <button onClick={toggleSortOrder} className="sort-button">
           <img
             src={sortOrder === "asc" ? upSelectedIcon : upUnselectedIcon}
             alt="Ascending"
-            style={{ width: "20px", height: "20px" }}
+            className="sort-icon"
           />
         </button>
-        <button
-          onClick={toggleSortOrder}
-          style={{ border: "none", background: "none", cursor: "pointer" }}
-        >
+        <button onClick={toggleSortOrder} className="sort-button">
           <img
             src={sortOrder === "desc" ? downSelectedIcon : downUnselectedIcon}
             alt="Descending"
-            style={{ width: "20px", height: "20px" }}
+            className="sort-icon"
           />
         </button>
-        <div style={{ fontSize: "12px" }}>
-          {sortOrder === "asc" ? "Lower to Higher" : "Higher to Lower"}
-        </div>
       </div>
-
-      {sortedData.map((item) => (
-        <TimelineComponent key={item.id} data={item} />
-      ))}
+      <div className="timeline-container">
+        {sortedData.map((item) => (
+          <TimelineComponent key={item.id} data={item} />
+        ))}
+      </div>
+      <div className="milestones-shameless-plug">
+        <p>
+          This idea of using a timeline to depict my story is based off my
+          thesis for my Software Engineering certification. The project is named
+          Milestones.
+        </p>
+        <p>
+          View the project{" "}
+          <a href="PROJECT_LINK_HERE">
+            <strong>here</strong>
+          </a>
+          !
+        </p>
+      </div>
     </div>
   );
 }

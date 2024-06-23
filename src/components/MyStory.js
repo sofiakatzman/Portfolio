@@ -13,22 +13,17 @@ function MyStory() {
   return (
     <div>
       <BackButton />
-      <h1>My Story</h1>
-      <div style={{ marginBottom: "20px" }}>
+      <h1 className="story-header">My Story</h1>
+      <div className="story-navigation-container">
         <button
           onClick={() => handleSelect("timeline")}
-          style={{
-            marginRight: "10px",
-            backgroundColor: view === "timeline" ? "lightgray" : "white",
-          }}
+          className={`story-navigation ${view === "timeline" ? "active" : ""}`}
         >
           View the Timeline
         </button>
         <button
           onClick={() => handleSelect("narrative")}
-          style={{
-            backgroundColor: view === "narrative" ? "lightgray" : "white",
-          }}
+          className={`story-navigation ${view === "narrative" ? "active" : ""}`}
         >
           Read the Story
         </button>

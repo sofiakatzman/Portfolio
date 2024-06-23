@@ -2,6 +2,8 @@
   --navy: #0C2B47;
   --lime: #DAF743;
   --purple: #966B9D;
+  --purple-accessible: #5f4264;
+  --gray-accessible: #696668;
   --lilac: #E8D7EA;
   --white: #F5F3EF;
   --gray: #ebe8ea;
@@ -263,8 +265,152 @@ ul.content-list{
   justify-content: center;
 }
 
+/* MY STORY */
+.story-header{
+  margin-top:0px;
+  margin-bottom:30px;
+}
+.story-navigation-container {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.story-navigation {
+  margin-right: 10px;
+  background-color: white;
+  border: solid 2.5px var(--gray);
+  border-radius: 40px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+
+}
+
+.story-navigation.active {
+  background-color: var(--lilac);
+  border-width: 0px;
+}
+/* TIMELINE */
+.timeline-container{
+  padding: 20px;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+.timeline-icon{
+  max-height: 20px;
+  max-width: 20px;
+}
+
+.vertical-timeline-element-title{
+  color: var(--navy);
+}
+
+.vertical-timeline-element-subtitle{
+  color: var(--purple-accessible);
+  margin: 5px 0px !important;
+}
+
+.vertical-timeline-element-description{
+  color: var(--navy);
+  margin-top: 10px ;
+}
+
+.vertical-timeline-element-date{
+  color: var(--navy);
+}
+.vertical-timeline-element-content {
+  padding:1em;
+}
+
+.work, .education, .personal{
+  padding-left: 15px;
+}
+
+.milestones-shameless-plug{
+  margin: 50px 60px;
+  color: var(--gray-accessible);
+}
+
+
+/* Filter Styles */
+
+.filter-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+  background-color: #ffffff; 
+  box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1); 
+  z-index: 1000;
+  box-sizing: border-box; 
+  overflow-x: auto; 
+}
+
+.filter-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.filter-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.filter-label {
+  font-size: 12px;
+  color: var(--navy);
+  font-family: 'MonteSemi';
+}
+
+/* Sort Styles */
+.sort-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right:60px;
+}
+
+.sort-label {
+  margin-right: 10px;
+}
+
+.sort-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--navy)
+}
+
+.sort-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.sort-text {
+  font-size: 12px;
+}
+
+.narrative {
+  margin: 65px 60px 60px 60px;
+}
+
+.first-paragraph{
+  margin: 0px;
+  margin-top: -20px;
+}
 /* WORK SNIP */
-.work{
+.work-snip{
   background-color: var(--gray);
   padding: 30px;
 }

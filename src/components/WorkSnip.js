@@ -18,7 +18,7 @@ function WorkSnip() {
 
   return (
     <div>
-      <div className="work" id="work">
+      <div className="worksnip" id="work">
         <h1 className="small">My Work</h1>
         <div className="work-container">
           {work.map((work, index) => (

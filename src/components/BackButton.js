@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import arrow from "../assets/arrow.svg"; // Adjust the path to your arrow.svg file
+import arrow from "../assets/arrow.svg";
 
 const BackButton = () => {
   const [hovered, setHovered] = useState(false);
 
   const handleClick = () => {
-    window.location.href = "/"; // Navigate to home page
+    window.location.href = "/";
   };
 
   return (
@@ -20,7 +20,7 @@ const BackButton = () => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <div style={{ position: "relative" }}>
+      <div style={{ position: "absolute" }}>
         <img
           src={arrow}
           alt="Back Arrow"

@@ -2,10 +2,10 @@ import React from "react";
 
 function Narrative() {
   return (
-    <div>
-      <p>
+    <div className="narrative">
+      <p className="first-paragraph">
         Born in Uruguay and arriving in the United States at the age of 7, I was
-        raised in a family deeply involved in construction and homemaking. When
+        raised in a family deeply involved in construction and homemaking . When
         I think of Uruguay, I remember peeling green beans with my grandpa,
         camping with family, eating delicious asado con chimichurri, and chasing
         chickens in the backyard. With a Spanish-to-English dictionary in one
@@ -18,9 +18,9 @@ function Narrative() {
         processed mail, organized bookshelves, and took lunch orders. This
         experience laid the groundwork for my work ethic and professional
         development. By July 2014, I was promoted to Operations Assistant and
-        Graphic Design Personal Assistant at Blue Apple Books, where I assisted
-        creative and operations directors in fulfilling daily tasks, cleaned up
-        photos, processed art, and put together catalogues.
+        Graphic Design Personal Assistant, where I assisted creative and
+        operations directors in fulfilling daily tasks, cleaned up photos,
+        processed art, and put together catalogues.
       </p>
       <p>
         In September 2015, I made a career switch to become a CoD Account
@@ -80,14 +80,18 @@ function Narrative() {
         I excel in dynamic environments and embrace challenges eagerly. I
         prioritize building meaningful relationships—with clients, colleagues,
         and collaborators—believing they are crucial for success and personal
-        growth. Outside of work, I enjoy swimming, experimenting with baking,
-        and immersing myself in gaming.
+        growth.
+        <p>
+          Outside of work, I enjoy swimming, experimenting with baking, and
+          immersing myself in gaming.
+        </p>
       </p>
       <p>
         If you're interested in connecting or exploring opportunities together,
-        I welcome you to reach out. Let's collaborate and create something
-        extraordinary together!
+        I welcome you to reach out.
       </p>
+
+      <p>Let's collaborate and create something extraordinary together!</p>
     </div>
   );
 }
