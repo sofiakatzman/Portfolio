@@ -30,7 +30,7 @@ function DevWorks() {
             </div>
 
             <Link
-              to={`/project/${project.name}`}
+              to={`/work/dev/${project.name}`}
               onClick={scrollToTop} // Scroll to top when clicking the link
               className="view-project"
             >

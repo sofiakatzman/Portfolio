@@ -9,6 +9,7 @@ import MyStory from "./components/MyStory";
 import LoadingScreen from "./components/LoadingScreen"; // Import the LoadingScreen component
 import DesignWorks from "./components/DesignWorks";
 import DevWorks from "./components/DevWorks";
+import DevProject from "./components/DevProject";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -30,6 +31,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/work/design" element={<DesignWorks />} />
             <Route path="/work/dev" element={<DevWorks />} />
+            <Route path="/work/dev/:name" element={<DevProject />} />
             <Route path="/story" element={<MyStory />} />
           </Routes>
         )}

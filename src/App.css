@@ -588,7 +588,6 @@ ul.content-list{
 
 /* WORKPAGES */
 
-/* Header Styles */
 .work-header-top, .work-header-bottom {
   margin: 0;
   color: var(--navy);
@@ -603,7 +602,6 @@ ul.content-list{
   margin-bottom: 20px;
 }
 
-/* Container Styles */
 .project-container {
   padding: 20px;
   margin: 20px auto;
@@ -614,6 +612,7 @@ ul.content-list{
 .project-paragraph {
   padding: 20px;
 }
+
 
 /* Project Card Styles */
 .project-card {
@@ -654,6 +653,72 @@ p.project {
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.34px;
+}
+/* PROJECT */
+.project-detail {
+  padding: 20px;
+}
+
+.project-detail h1 {
+  color: var(--main-green);
+}
+
+.project-detail p {
+  margin-bottom: 10px;
+}
+
+h2.project-name{
+  color: var(--main-orange);
+  font-size: 20px;
+}
+.project-details ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.project-details li {
+  margin-bottom: 5px;
+
+}
+
+.project-list-padded {
+  padding: 5px 0px;
+}
+
+.project-features {
+  background-color: var(--purple-accessible);
+  padding: 5%;
+  color: var(--lilac);
+}
+
+.project-achievements{
+  background-color: var(--white);
+  padding: 5%;
+  margin-bottom: 100px;
+}
+
+.project-header{
+  margin-top: 0px;
+  padding: 5%;
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+h2.project-case-study-header{
+  color: var(--lilac);
+}
+
+h1.project-name {
+  color: var(--gray);
+  
+}
+
+.project-case-study {
+  color: var(--light-green);
+}
+
+h2.project-features{
+  color: var(--white);
 }
 
 /* Technology Container Styles */

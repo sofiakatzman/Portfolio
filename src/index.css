@@ -38,3 +38,4 @@ code {
   src: local('MonteMed'), url(../public/fonts/MontserratAlternates-Medium.ttf) format('truetype');
 }
 
+@import "~react-image-gallery/styles/css/image-gallery.css";
