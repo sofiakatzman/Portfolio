@@ -298,6 +298,9 @@ ul.content-list{
 }
 
 /* CONTACT */
+.contact-container{
+  margin:50px;
+}
 .contact-form {
   background-color: var(--gray);
   padding: 22px;
