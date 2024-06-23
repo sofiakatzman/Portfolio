@@ -1,44 +1,45 @@
-import React from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Footer from "./components/Layout/Footer/Footer"
-import Header from "./components/Layout/Header/Header"
-import Home from "./components/Pages/Home/Home"
-import Projects from "./components/Pages/Projects/Projects"
-import ContactMe from './components/Pages/ContactMe/ContactMe'
-import ProjectDetail from './components/Pages/Projects/ProjectsDetail/ProjectDetail'
-
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import Services from "./components/Services";
+import "./App.css";
+import Footer from "./components/Footer";
+import Signoff from "./components/Signoff";
+import MyStory from "./components/MyStory";
+import LoadingScreen from "./components/LoadingScreen"; // Import the LoadingScreen component
+import DesignWorks from "./components/DesignWorks";
+import DevWorks from "./components/DevWorks";
+import DevProject from "./components/DevProject";
 
 function App() {
-  
-  //scrolling navigation hide/view event listener
-  let prevScrollPos = window.pageYOffset
+  const [loading, setLoading] = useState(false);
 
-  window.addEventListener("scroll", () => { 
-    const currentScrollPos = window.pageYOffset
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 1000);
+  // }, []);
 
-    if (prevScrollPos > currentScrollPos) {
-      document.querySelector(".footer").classList.remove("hide")
-    } else {
-      document.querySelector(".footer").classList.add("hide")
-    }
-
-    prevScrollPos = currentScrollPos
-
-})
   return (
     <div>
       <Router>
-        <Header />        
-        <Routes>
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/project/:name" element={<ProjectDetail />} />
-          <Route path="/contactme" element={<ContactMe />} />
-          <Route path="/" element={<Home />} /> 
-        </Routes>     
+        {loading ? (
+          <LoadingScreen /> // Render loading screen while loading is true
+        ) : (
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/work/design" element={<DesignWorks />} />
+            <Route path="/work/dev" element={<DevWorks />} />
+            <Route path="/work/dev/:name" element={<DevProject />} />
+            <Route path="/story" element={<MyStory />} />
+          </Routes>
+        )}
+        <Signoff />
         <Footer />
       </Router>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
