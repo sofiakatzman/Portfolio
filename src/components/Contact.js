@@ -41,7 +41,7 @@ function Contact() {
   };
 
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contact">
       <div className="contact-form">
         {/* Ornament images */}
         <img src={ornament} alt="Ornament" className="ornament top-left" />
@@ -49,7 +49,7 @@ function Contact() {
         <img src={ornament} alt="Ornament" className="ornament bottom-left" />
         <img src={ornament} alt="Ornament" className="ornament bottom-right" />
 
-        <h1>Contact Me</h1>
+        <h1>CONTACT ME</h1>
         <div className="email-form-container">
           <div className="email-form">
             {showConfirmation ? (

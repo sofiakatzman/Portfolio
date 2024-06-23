@@ -8,7 +8,7 @@ function AboutMe() {
     <div id="about">
       <div className="header">
         {doodle}
-        <h1 className="small">about me</h1>
+        <h1 className="small">ABoUT ME</h1>
         {doodle}
       </div>
       <p>

@@ -8,6 +8,20 @@
   --white: #F5F3EF;
   --gray: #ebe8ea;
 }
+html{
+  height: 100%;
+  margin: 0;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+.main-content {
+  flex: 1;
+}
 
 body {
   background-color: var(--white);
@@ -407,9 +421,137 @@ ul.content-list{
 
 .first-paragraph{
   margin: 0px;
-  margin-top: -25
-  px;
+  margin-top: -25;
 }
+
+/* SERVICES */
+.services-header{
+  margin: 30px 0px 0px 0px;
+}
+
+.services-container {
+  margin: 0px 20px;
+}
+
+.services-page header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-page header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.services-page header p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.service-section {
+  margin-bottom: 40px;
+  border: 2.5px solid var(--gray);
+  border-radius: 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.service-header {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.service-header h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.service-section p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.experience-list {
+  margin-bottom: 20px;
+}
+
+.experience-list h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.experience-list ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.experience-list ul li {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.technologies-list {
+  margin-bottom: 20px;
+}
+
+.technologies-list h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.technologies-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.technology-card {
+  padding: 10px;
+  border-radius: 40px;
+  border: 2.5px solid var(--navy);
+  background-color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px; /* Adjust card width as needed */
+  height: 150px; /* Adjust card height as needed */
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.technology-card:hover {
+  transform: translateY(-5px);
+}
+
+.technology-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.technology-name {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Footer section */
+.services-footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+
 /* WORK SNIP */
 .work-snip{
   background-color: var(--gray);
@@ -443,6 +585,115 @@ ul.content-list{
   text-decoration: none;
   color: inherit; 
 }
+
+/* WORKPAGES */
+
+/* Header Styles */
+.work-header-top, .work-header-bottom {
+  margin: 0;
+  color: var(--navy);
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.work-header-bottom {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+/* Container Styles */
+.project-container {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 20px;
+}
+
+.project-paragraph {
+  padding: 20px;
+}
+
+/* Project Card Styles */
+.project-card {
+  margin-bottom: 20px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.project-card h2 {
+  font-size: 1.5rem;
+  color: #333;
+  line-height: 20px;
+  letter-spacing: 0.34px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+h3.project {
+  color: var(--gray-accessible);
+  text-align: right;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.34px;
+}
+
+p.project {
+  margin: 0px;
+  color: var(--navy-blue, #0C2B47);
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.34px;
+}
+
+/* Technology Container Styles */
+.project-technologies-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.project-technology {
+  font-size: 12px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  color: #0c2b47;
+}
+
+/* View Project Button Styles */
+.view-project {
+  display: flex;
+  padding: 6px 0;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background: var(--lilac);
+  margin: 20px 0;
+  text-decoration: none;
+  color: var(--navy);
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.34px;
+}
+
 
 /* CONTACT */
 .contact-container{
@@ -556,11 +807,11 @@ ul.content-list{
   max-width: 30%;
 }
 
-/* FOOTER */
 .footer {
   position: relative;
   width: 100%;
   padding-top: 60px; /* Add padding to ensure content doesn't overlap with the scallop image */
+  z-index: -1000;
 }
 
 .footer-sections {
@@ -568,18 +819,16 @@ ul.content-list{
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px;
-  z-index: 1; 
   background-color: var(--lilac);
 }
 
 .footer-section {
-  flex: 1 1 100px; 
+  flex: 1 1 100px;
   margin: 10px;
 }
 
 .scallop {
   position: absolute;
-  /* top: -60%; for web */ 
   top: 0px;
   left: 0;
   width: 100%;
@@ -591,7 +840,6 @@ ul.content-list{
   display: flex;
   flex-direction: column;
   gap: 5px;
-                
 }
 
 .bullet-list-item {
@@ -605,7 +853,7 @@ ul.content-list{
 
 .bullet-list-item a {
   text-decoration: none;
-  color: var(--navy); 
+  color: var(--navy);
 }
 
 /* SCROLLBAR STYLING */

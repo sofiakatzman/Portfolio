@@ -16,7 +16,7 @@ const LoadingScreen = () => {
         zIndex: 9999,
       }}
     >
-      <h2>Loading...</h2>
+      <h2>LOADING...</h2>
     </div>
   );
 };

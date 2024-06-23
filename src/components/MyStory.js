@@ -13,7 +13,7 @@ function MyStory() {
   return (
     <div>
       <BackButton />
-      <h1 className="story-header">My Story</h1>
+      <h1 className="story-header">MY STORY</h1>
       <div className="story-navigation-container">
         <button
           onClick={() => handleSelect("timeline")}
