@@ -28,7 +28,7 @@ body {
   font-family: 'Monte';
   color: var(--navy);
   justify-content: center;
-  /* width: 480px; */
+  margin: 0px;
 }
 
 
@@ -57,6 +57,7 @@ h2 {
   font-family: 'MonteSemi';
   font-size: 22px;
   letter-spacing: .5px;
+  margin: 0px;
 }
 
 
@@ -114,7 +115,7 @@ p.bold{
   position: absolute; 
   top: -100px;
   left: -100px; 
-  z-index: -1; 
+  z-index: -2; 
   width: 120%;
 }
 
@@ -196,7 +197,7 @@ p.bold{
   background-color: var(--lilac);
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 10;
   border: solid;
   border-width: 2.5px;
   border-color: var(--navy);
@@ -309,8 +310,8 @@ ul.content-list{
 /* TIMELINE */
 .timeline-container{
   padding: 20px;
-  padding-right: 60px;
-  padding-left: 60px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 .timeline-icon{
   max-height: 20px;
@@ -360,7 +361,7 @@ ul.content-list{
   padding: 30px 50px;
   background-color: #ffffff; 
   box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1); 
-  z-index: 1000;
+  z-index: 10;
   box-sizing: border-box; 
   overflow-x: auto; 
 }
@@ -622,7 +623,7 @@ ul.content-list{
   border-radius: 20px;
   border: 1px solid #ccc;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  z-index: 100;
+  z-index: 10;
 }
 
 .project-card h2 {
@@ -876,7 +877,7 @@ h2.project-features{
   position: relative;
   width: 100%;
   padding-top: 60px; /* Add padding to ensure content doesn't overlap with the scallop image */
-  z-index: -1000;
+  /* z-index: -1; */
 }
 
 .footer-sections {
@@ -898,7 +899,7 @@ h2.project-features{
   left: 0;
   width: 100%;
   height: auto;
-  z-index: -1;
+  z-index: -2;
 }
 
 .bullet-list {
@@ -940,8 +941,39 @@ h2.project-features{
   background: var(--navy); 
 } */
 
+@media (max-width: 360px) {
+  /* Your styles for mobile phones */
+}
+
+
+body{
+  padding: 10px;
+}
+
+h1.hero{
+  font-size: 36px;
+}
+
+.contact-container{
+  margin: 10px;
+}
+
+.work-container{
+  padding: 10px;
+}
+
+.work-button{
+  padding:15px 25px;
+}
+
 /* Extra Small Devices (Mobile Phones) */
-@media (max-width: 480px) {
+@media (max-width: h) {
+
+  body{
+    padding: 30px;
+  }
+  
+
   /* Your styles for mobile phones */
 }
 

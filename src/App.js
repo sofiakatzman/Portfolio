@@ -21,7 +21,7 @@ function App() {
   // }, []);
 
   return (
-    <div>
+    <>
       <Router>
         {loading ? (
           <LoadingScreen /> // Render loading screen while loading is true
@@ -38,7 +38,7 @@ function App() {
         <Signoff />
         <Footer />
       </Router>
-    </div>
+    </>
   );
 }
 
