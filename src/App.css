@@ -939,3 +939,28 @@ h2.project-features{
 ::-webkit-scrollbar-thumb:hover {
   background: var(--navy); 
 } */
+
+/* Extra Small Devices (Mobile Phones) */
+@media (max-width: 480px) {
+  /* Your styles for mobile phones */
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Your styles for tablets */
+}
+
+/* Medium Devices (Small Laptops and Large Tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Your styles for small laptops and large tablets */
+}
+
+/* Large Devices (Desktops and Large Monitors) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  /* Your styles for desktops and large monitors */
+}
+
+/* Extra Large Devices (Ultra-Wide Monitors) */
+@media (min-width: 1441px) {
+  /* Your styles for ultra-wide monitors */
+}
