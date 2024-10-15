@@ -37,14 +37,14 @@ h1 {
   opacity: 50%;
 }
 
-h2{
+h2 {
   font-size: 24px;
   font-weight: 700;
 }
+
 h2.hero {
   font-weight: 300;
 }
-
 
 
 h3 {
@@ -72,4 +72,19 @@ p.sm{
 p.xsm{
   font-size: 14px;
   font-weight: 400;
+}
+
+a {
+  text-decoration:none;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.label {
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.inactive {
+  color: var(--white);
 }
