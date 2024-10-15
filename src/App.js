@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LoadingScreen from "./components/Pages/LoadingScreen";
-import Home from "./components/Pages/Home";
+import Intro from "./components/Pages/Intro";
 import "./App.css";
+
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
           <LoadingScreen /> 
         ) : (
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Intro />} />
           </Routes>
         )}
       </Router>
