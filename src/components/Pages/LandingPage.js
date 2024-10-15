@@ -1,9 +1,12 @@
 import Intro from "../Templates/Intro"
+import Skills from "../Templates/Skills"
+
 function LandingPage(){
     return(
-<div>
-    <Intro />
-</div>
+        <div>
+            <Intro />
+            <Skills />
+        </div>
     )
 }
 

@@ -1,0 +1,14 @@
+.skills-container{
+    background-color: var(--dark-beige);
+    text-align: center;
+    padding: 80px;
+
+
+}
+
+
+.skills-imgs{
+    justify-content: center;
+    gap:16px;
+    margin:32px 0px;
+}
