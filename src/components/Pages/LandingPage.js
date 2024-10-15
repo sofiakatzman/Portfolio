@@ -1,5 +1,5 @@
-import Intro from "../Templates/Intro"
-import Skills from "../Templates/Skills"
+import Intro from "../Organisms/Intro"
+import Skills from "../Organisms/Skills"
 
 function LandingPage(){
     return(
