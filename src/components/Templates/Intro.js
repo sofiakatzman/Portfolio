@@ -1,13 +1,13 @@
 import headshot from '../../assets/headshot.png' 
 import RefLinks from '../Molecules/RefLinks'
 import { refLinksData } from '../../data/refLinksData'
-import './styles.css'
+import './intro.css'
 
 function Intro(){
 
     return(
         <div className="flex-container intro-container">
-          <img src={headshot} alt="sk-headshot"/>
+          <img src={headshot} alt="sk-headshot" className="sk-headshot"/>
           <div className="intro-textbox">
             <h1>Hello, I am Sofia!</h1>
             <h2 className='hero light'>Creative Technologist & Full Stack Developer </h2>
