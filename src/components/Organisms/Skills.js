@@ -1,24 +1,31 @@
 import "./skills.css"
-import skillsImage from "../../assets/skills-placeholder.png"
+import airtable from "../../assets/tools/tools-airtable.png"
+import css from "../../assets/tools/tools-css.png"
+import figma from "../../assets/tools/tools-figma.png"
+import flask from "../../assets/tools/tools-flask.png"
+import html from "../../assets/tools/tools-html.png"
+import js from "../../assets/tools/tools-js.png"
+import ts from "../../assets/tools/tools-ts.png"
+import openai from "../../assets/tools/tools-openai.png"
+import python from "../../assets/tools/tools-python.png"
+import zapier from "../../assets/tools/tools-zapier.png"
 
 function Skills(){
     return(
         <div className="skills-container">
-            <h1 className="light">Skills & Tools</h1>
+            <h1 className="light">Tools & Technologies</h1>
             <div className="flex-container skills-imgs">
-                <img src={skillsImage} alt="skills-placeholder"/>
-                <img src={skillsImage} alt="skills-placeholder"/>
-                <img src={skillsImage} alt="skills-placeholder"/>
-                <img src={skillsImage} alt="skills-placeholder"/>
-                <img src={skillsImage} alt="skills-placeholder"/>
-                <img src={skillsImage} alt="skills-placeholder"/>
-                <img src={skillsImage} alt="skills-placeholder"/>
-                <img src={skillsImage} alt="skills-placeholder"/>
-                <img src={skillsImage} alt="skills-placeholder"/>
-                <img src={skillsImage} alt="skills-placeholder"/>
-
+                <img src={python} alt="python"/>
+                <img src={js} alt="javascript"/>
+                <img src={ts} alt="typescript"/>
+                <img src={html} alt="html"/>
+                <img src={css} alt="css"/>
+                <img src={flask} alt="flask"/>
+                <img src={openai} alt="openai"/>
+                <img src={zapier} alt="zapier"/>
+                <img src={airtable} alt="airtable"/>
+                <img src={figma} alt="figma"/>
             </div>
-           
         </div>
     )
 }
