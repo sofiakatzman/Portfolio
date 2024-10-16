@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LoadingScreen from "./components/Pages/LoadingScreen";
 import LandingPage from "./components/Pages/LandingPage";
 import "./App.css";
+import Navigation from "../src/components/Organisms/Navigation.js"
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
   return (
     <>
       <Router>
+        <Navigation />
         {loading ? (
           <LoadingScreen /> 
         ) : (
