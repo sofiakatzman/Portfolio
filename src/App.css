@@ -2,6 +2,7 @@
   --white: #FFFFFF;
   --light-beige: #F7F4EF;
   --dark-beige: #EBE4DC;
+  --accent-light-2: #F57B43;
   --accent-light: #E6B3A8;
   --accent-dark: #448C8C;
   --black: #252626;
@@ -97,6 +98,16 @@ a {
 u {
   text-decoration-thickness: 1px;
 }
+
+button {
+  background-color: var(--accent-light-2);
+  border: none;
+  border-radius: 40px;
+  width: 100%;
+  padding: 25px;
+  font-weight: 600;
+}
+
 
 /* LAYOUT */
 
