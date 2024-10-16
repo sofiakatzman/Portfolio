@@ -10,6 +10,7 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    
 
     const serviceId = "service_fud4mps";
     const templateId = "template_nljzs3b";
@@ -41,42 +42,45 @@ function Contact() {
   };
 
   return (
-    <div className="">
+    <div >
     {showConfirmation ? (
-      <div className="">
+      <div className="form-container">
         <p>I've received your message!</p>
         <p>You will hear from me soon.</p>
       </div>
     ) : (
-      <div>
+      <div className="form-container">
         <form onSubmit={handleSubmit}>
           <FormInput
-            label="Full Name: "
+            label="Full Name:"
             type="text"
             value={fromName}
             onChange={(e) => setFromName(e.target.value)}
             required
-            placeholder="Jane Doe"
+            placeholder="Full Name"
+            isMessage={false}
           />
 
           <FormInput 
-            label="Email Address: "
+            label="Email Address:"
             type="email"
             value={fromEmail}
             onChange={(e) => setFromEmail(e.target.value)}
             required
-            placeholder="name@email.com"
+            placeholder="Email"
+            isMessage={false}
           />
 
           <FormInput 
-            label="Message: "
+            label="Message:"
             type="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
-            placeholder="Let's work together!"
+            placeholder="Type your message here"
+            isMessage={true}
           />
-          <button type="submit">Submit</button>
+          <button type="submit" className="button submit">Submit</button>
         </form>
       </div>
     )}
