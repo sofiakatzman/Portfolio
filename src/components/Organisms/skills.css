@@ -2,13 +2,20 @@
     background-color: var(--dark-beige);
     text-align: center;
     padding: 80px;
-
-
+    justify-content: center; 
+    align-items: center;
+    max-width: 100%; 
+    margin: 0 auto;
 }
 
-
 .skills-imgs{
+    display: flex;
     justify-content: center;
-    gap:16px;
-    margin:32px 0px;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    opacity: 75%;
+    width: 80%; 
+    margin: 0 auto; 
+    padding-top: 40px;
 }
