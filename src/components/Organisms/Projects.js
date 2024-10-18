@@ -1,6 +1,10 @@
 import { useState } from "react"
+import { projectsData } from "../../data/projectsData.js"
 
 function Projects(){
+
+    console.log(projectsData)
+    console.log(projectsData.length)
     
 
     const [projIndex, setProjIndex] = useState(0)
@@ -22,11 +26,13 @@ function Projects(){
     }
 
     return(
-        <div>
-            Projects! 
-            Project Image
-            Project Name
-            Project Description
+         <div>
+            <h2>{projectsData[projIndex].name}</h2>
+            <img
+                src={projectsData[projIndex].image}
+                alt={projectsData[projIndex].name}
+            />
+            <p>{projectsData[projIndex].description}</p>
             <button onClick={goBackward}>backward</button>
             {projIndex}
             <button onClick={goForward}>forward</button>
