@@ -2,15 +2,13 @@ import { useState } from "react"
 import { projectsData } from "../../data/projectsData.js"
 
 function Projects(){
-
-    console.log(projectsData)
-    console.log(projectsData.length)
-    
+    const projectCount=projectsData.length
+    console.log(projectCount)
 
     const [projIndex, setProjIndex] = useState(0)
 
     function goForward(){
-        if(projIndex <=4){
+        if(projIndex <= projectCount-2){
             setProjIndex(projIndex+1)
         }else{
             setProjIndex(0)
@@ -18,10 +16,10 @@ function Projects(){
     }
 
     function goBackward(){
-        if(projIndex >=5){
-            setProjIndex(projIndex-1)
-        }else{
-            setProjIndex(5)
+        if (projIndex === 0) {
+            setProjIndex(projectCount - 1); 
+        } else {
+            setProjIndex(projIndex - 1);
         }
     }
 
