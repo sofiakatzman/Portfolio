@@ -10,11 +10,11 @@ function Navigation(){
           link: "/work",
           alt: "my work",
         },
-        {
-          title: "fun",
-          link: "/play",
-          alt: "my play",
-        },
+        // {
+        //   title: "fun",
+        //   link: "/play",
+        //   alt: "my play",
+        // },
         {
           title: "about",
           link: "/about",
@@ -42,6 +42,7 @@ function Navigation(){
                 {link.title}
               </Link>
             )}
+            {index < links.length - 1 && <span className="circle-divider" />}
           </div>
         ))}
       </div>
