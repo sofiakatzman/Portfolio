@@ -13,28 +13,73 @@ import react from "../../assets/tools/tools-react.png"
 import gcp from "../../assets/tools/tools-gcp.png"
 import adobe from "../../assets/tools/tools-adobe.png"
 
+function Skills() {
+    const languages = [
+        { src: python, alt: "Python", label: "Python" },
+        { src: js, alt: "JavaScript", label: "JavaScript" },
+        { src: ts, alt: "TypeScript", label: "TypeScript" },
+        { src: react, alt: "React", label: "React" },
+        { src: html, alt: "HTML", label: "HTML" },
+        { src: css, alt: "CSS", label: "CSS" },
+        { src: flask, alt: "Flask", label: "Flask" },
+    ];
 
-function Skills(){
-    return(
+    const tools = [
+        { src: openai, alt: "OpenAI", label: "OpenAI" },
+        { src: gcp, alt: "Google Cloud Platform", label: "GCP" },
+        { src: zapier, alt: "Zapier", label: "Zapier" },
+        { src: airtable, alt: "Airtable", label: "Airtable" },
+        { src: figma, alt: "Figma", label: "Figma" },
+        { src: adobe, alt: "Adobe", label: "Adobe" },
+    ];
+
+
+
+    return (
+        // <div className="skills-container">
+        //     <h1 className="light">Tools & Technologies</h1>
+        //     <div className="flex-container skills-imgs">
+        //         {tools.map(tool => (
+        //             <div className="tool-container" key={tool.alt}>
+        //                 <img src={tool.src} alt={tool.alt} />
+        //                 <span className="tooltip">{tool.label}</span>
+        //             </div>
+        //         ))}
+        //     </div>
+        // </div>
+
+
         <div className="skills-container">
-            <h1 className="light">Tools & Technologies</h1>
-            <div className="flex-container skills-imgs">
-                <img src={python} alt="python"/>
-                <img src={js} alt="javascript"/>
-                <img src={ts} alt="typescript"/>
-                <img src={react} alt="react"/>
-                <img src={html} alt="html"/>
-                <img src={css} alt="css"/>
-                <img src={flask} alt="flask"/>
-                <img src={openai} alt="openai"/>
-                <img src={gcp} alt="google-cloud-platform"/>
-                <img src={zapier} alt="zapier"/>
-                <img src={airtable} alt="airtable"/>
-                <img src={figma} alt="figma"/>
-                <img src={adobe} alt="adobe"/>
+            <div className="flex-container space-around">
+                <div className="flex-container skills-imgs">
+                    {languages.map(language => (
+                        <div className="tool-container" key={language.alt}>
+                            <img src={language.src} alt={language.alt} />
+                            <span className="tooltip">{language.label}</span>
+                        </div>
+                    ))}
+                </div>
+                <div className="burst">
+                    <h2>Languages</h2>
+                    <p className="xsm">These programming languages are my toolkit for turning ideas into reality and tackling complex challenges. With a solid understanding of each, I can build versatile solutions that meet a variety of project needs.</p>
+                </div>
+            </div>
+            <div className="flex-container spacer space-around">
+                <div className="burst ">
+                    <h2>API's & Tools</h2>
+                    <p className="xsm">These APIs help me automate tasks and manage data effortlessly, while traditional tools allow me to focus on creating impactful results. Together, they enable me to integrate functionalities and custom solutions with ease.</p>
+                </div>
+                <div className="flex-container skills-imgs">
+                    {tools.map(tool => (
+                        <div className="tool-container" key={tool.alt}>
+                            <img src={tool.src} alt={tool.alt} />
+                            <span className="tooltip">{tool.label}</span>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Skills
+export default Skills;
