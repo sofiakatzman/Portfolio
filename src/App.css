@@ -11,6 +11,8 @@
 html{
   height: 100%;
   margin: 0;
+  scroll-behavior: smooth; 
+
 }
 
 body {
@@ -28,6 +30,11 @@ body {
   border: 1px solid #000;
   box-shadow: 0 6px 0 0 var(--black);
   background-color: var(--white);
+}
+
+.border-noshadow {
+  border-radius: 40px;
+  background-color: var(--dark-beige);
 }
 
 h1 {
@@ -87,7 +94,7 @@ a {
 }
 
 .label {
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 700;
 }
 
@@ -99,13 +106,29 @@ u {
   text-decoration-thickness: 1px;
 }
 
-button {
-  background-color: var(--accent-light-2);
+.button {
+  background-color: var(--white);
   border: none;
+  color: var(--black);
   border-radius: 40px;
   width: 100%;
   padding: 25px;
   font-weight: 600;
+  border: 1px solid var(--black);
+  filter: drop-shadow(0px 6px 0px var(--dark-beige));
+  transition: transform 0.1s, filter 0.1s;
+}
+
+.button:active {
+  filter: none; 
+  transform: translateY(6px); 
+}
+
+.fullscreen-container {
+  width: 100vw;      
+  height: 100vh;     
+  overflow: hidden;  
+  position: relative; 
 }
 
 
@@ -113,8 +136,17 @@ button {
 
 .flex-container{
   display: flex; 
+  gap: 12px;
 }
 
 .space-between{
   justify-content: space-between;
+}
+
+.spacer{
+  margin-top:72px;
+}
+
+.space-around{
+  justify-content: space-around;
 }
