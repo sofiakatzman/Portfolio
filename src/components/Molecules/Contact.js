@@ -80,7 +80,7 @@ function Contact() {
             placeholder="Type your message here"
             isMessage={true}
           />
-          <button type="submit" className="button submit">Submit</button>
+          <button type="submit" className="button submit">Send</button>
         </form>
       </div>
     )}
