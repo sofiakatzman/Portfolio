@@ -1,5 +1,5 @@
 import ContactForm from "../Organisms/ContactForm"
-import Featured from "../Organisms/Featured"
+// import Featured from "../Organisms/Featured"
 import Footer from "../Organisms/Footer.js"
 import Intro from "../Organisms/Intro"
 import Projects from "../Organisms/Projects.js"
@@ -10,7 +10,7 @@ function LandingPage(){
         <div>
             <Intro />
             <Skills />
-            <Featured />
+            {/* <Featured /> */}
             <Projects />
             <ContactForm />
             <Footer />
