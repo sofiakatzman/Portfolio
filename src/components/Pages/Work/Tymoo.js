@@ -5,6 +5,9 @@ import { useEffect } from "react";
 import ToolStack from "../../Organisms/Modules/ToolStack.js";
 import InfoSteps from "../../Organisms/Modules/InfoSteps.js";
 
+import ContactForm from "../../Organisms/ContactForm.js";
+import Footer from "../../Organisms/Footer.js";
+
 function Tymoo(){
 
     useEffect(() => {
@@ -20,6 +23,8 @@ function Tymoo(){
             <Workflow project={projectsData[0]}/>
             <InfoSteps project={projectsData[0]}/>
             <ToolStack project={projectsData[0]}/>
+            <ContactForm />
+            <Footer />
         </div>
     )
 }
