@@ -11,7 +11,7 @@ function InfoSteps({project}){
                     {project.features.map((feature, index) => {
                         itemCount++;
                         return (
-                            <div>
+                            <div key={`project ${feature.name}`}>
                             <InfoStep 
                                 eyebrow={`Feature ${itemCount}`}
                                 heading={feature.name}
@@ -19,6 +19,7 @@ function InfoSteps({project}){
                                 input={feature.input}
                                 output={feature.output}
                                 image={feature.image}/>
+                                
                             </div>
                         );
                     })}
