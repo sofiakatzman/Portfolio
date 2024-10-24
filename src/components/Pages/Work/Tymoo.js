@@ -23,7 +23,7 @@ function Tymoo(){
             <Workflow project={projectsData[0]}/>
             <InfoSteps project={projectsData[0]}/>
             <ToolStack project={projectsData[0]}/>
-            <ContactForm />
+            {/* <ContactForm /> */}
             <Footer />
         </div>
     )
