@@ -105,14 +105,88 @@ export const projectsData = [
 
     },
     {
-        name: "Scholastic Book Clubs - Asset Generator",
+        name: "Clubs Asset Generator",
         image: pjPlaceholder, 
-        description: "Lorem ipsum and blah blah blah. This is placeholder 2. Lorem ipsum and blah blah blah.Lorem ipsum and blah blah blah.Lorem ipsum and blah blah blah.Lorem ipsum and blah blah blah.",
-        tags: ["Testing 1","Testing 2","Testing 3"],
+        description: "Figma plugin developed for Scholastic Book Clubs. Generate series of brand-specific banners directly or batch import from Air Table entries! ",
+        tags: ["Figma Plugin","Airtable","TS"],
         cta1_copy:"Read More >",
         cta1_url:"/work/asset-generator",
         // cta2_copy:"View Live >",
         // cta2_url:"",
+        // project_page_link: "https://www.tidalwavecontent.com/",
+        // project_page_copy: "view live",
+        summary: "Figma plugin developed for Scholastic Book Clubs. Generate series of brand-specific banners directly or batch import from Air Table entries! ",
+        role: "Product Designer and Full Stack Developer",
+        toolslist: "Figma, AirTable, Basecamp, Zapier",
+        technologies: "Javascript, React,  HTML, CSS",
+        apis: "Figma, AirTable, Basecamp, Google Docs",
+        phasesdescription: "The entire idea behind Clubs Banner Generator was making it easy for our designers to create banners. Having had to create banners myself, I knew first hand what all of the difficulties were when trying to turn around deliverables quickly. Using these frustrations, I found solutions through making a custom built Figma plugin for my team! The idea quickly took a life of it’s own and became a full operations automation project.",
+        phases: [
+            {
+                strong: "Templatization",
+                text: "Figma Component Library Buildout"
+            },
+            {
+                strong: "Initial Programming",
+                text: "Develop proof of concept of banner generation via UI"
+            },
+            {
+                strong: "UX/UI Redesign",
+                text: "isual refresh along with UX improvements for more intuitive use."
+            },
+            {
+                strong: "Automation via Integration",
+                text: "Integrate Air Table to Figma"
+            },
+            {
+                strong: "Automation via Zapier",
+                text: "Use Air Table views to trigger Zapier automations that integrate Basecamp (our project management platform)"
+            }
+        ],
+        // toolstack: "While I worked within the tools preferred by my client and navigated certain limitations, many custom solutions still had to be developed with code to meet the platform's unique needs. As the sole developer, I prioritized low-code solutions where possible to ensure maintainability in my absence, but also implemented custom coding solutions to deliver a scalable and efficient system.",
+        // tools: [
+        //     {
+        //         logo: airtablelogo,
+        //         name: "Airtable",
+        //         description: "Airtable serves as the backbone of the platform, functioning as the central database. I leveraged its full range of capabilities, including automations, scripts, forms, and interfaces, to streamline data collection and workflow management. These tools played a critical role in ensuring the platform's efficiency and scalability, allowing users to interact seamlessly with their data and automating key processes behind the scenes.",
+        //     },
+        //     {
+        //         logo: stackerlogo,
+        //         name: "Stacker",
+        //         description: "Stacker serves as the front-end interface for TyMoo, where users interact with the platform by filling out forms and accessing their generated content. I integrated all forms into Stacker, building out the entire user interface to provide seamless access to personas, content waves, and blog analytics. Prior to my involvement, the TyMoo interface was primarily used for blog post creation and tracking, but I expanded its functionality to serve as a central hub for the entire platform.",
+        //     },
+        //     {
+        //         logo: zapierlogo,
+        //         name: "Zapier",
+        //         description: "Zapier is the automation platform that ties everything together. I optimized workflows by creating subzaps—reusable components that function like coding functions. These subzaps are embedded into multiple zaps, streamlining the process and making the platform more efficient by reducing redundant tasks.",
+        //     }
+        // ],
+        features: [
+            {
+                name: "Series Generator",
+                descriptions: "The first series of the plugin allowed users to just generate a basic set of assets with selected copy. The styling was minimal and unsightly, but it got the work done. It allowed me to prove that the designers were hungry for a tool to simplify their workflow.",
+                input: "Digital Designers",
+                // output:"Generated Persona \n Generated Brand Promise",
+                image: featurePlaceholder,
+            },
+            {
+                name: "Bulk Generator",
+                descriptions: "The second iteration of the plugin made calls to the Air Table API from the Figma API, allowing me to be able to extract a large list of assets that needed to be generated and programmatically setting it up so that they'd be generated after clicking “sync”. ",
+                input: "Art Director",
+                // output:"Content Brief \n Content Structure \n 7 Blog Ideas",
+                image: featurePlaceholder,
+            },
+            {
+                name: "Zapier Automations",
+                descriptions: "The third iteration of the plugin leveraged Air Table views and Zapier alongside Basecamp to incorporate a workflow management component and notification system. ",
+                input: "Board / VP Executives, Adjacent Business Units",
+                // output:"Blog Post",
+                image: featurePlaceholder,
+            },
+            
+        ]
+
+
     },
     {
         name: "Scripts",
