@@ -4,7 +4,7 @@ import "./style.css"
 function InfoStep({eyebrow, heading, description, input, output, image}){
     return(
       
-            <div className="flex-container m-gap spacer "> 
+            <div className="flex-container spacer m-gap"> 
                 <div className="">
                     <h1 className="ist">{eyebrow}</h1>
                     <h2 className="ist">{heading}</h2>
@@ -19,6 +19,7 @@ function InfoStep({eyebrow, heading, description, input, output, image}){
                     </div>
                 </div>
                 <img src={image} className="ist"/>
+               
             </div>
             
         

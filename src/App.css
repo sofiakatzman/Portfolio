@@ -144,9 +144,12 @@ u {
 }
 
 .spacer{
-  margin-top:112px;
+  margin-bottom: 144px;
 }
 
+.xsm-spacer{
+  margin-top: 48px;
+}
 .sm-spacer{
   margin-top:64px;
 }
@@ -157,5 +160,5 @@ u {
 }
 
 .m-gap{
-  gap: 15%;
+  gap: 20%;
 }

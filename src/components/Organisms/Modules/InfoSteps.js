@@ -6,9 +6,12 @@ function InfoSteps({project}){
     return(
         <div className="features-container">
             <div className="features">
+                    <h2>Project Features</h2>
+                    <div className="xsm-spacer">
                     {project.features.map((feature, index) => {
                         itemCount++;
                         return (
+                            <div>
                             <InfoStep 
                                 eyebrow={`Feature ${itemCount}`}
                                 heading={feature.name}
@@ -16,8 +19,10 @@ function InfoSteps({project}){
                                 input={feature.input}
                                 output={feature.output}
                                 image={feature.image}/>
+                            </div>
                         );
                     })}
+                    </div>
                 </div>
         </div>
     )
