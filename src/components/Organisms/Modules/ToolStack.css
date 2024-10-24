@@ -1,0 +1,10 @@
+.ts-container{
+    padding: 80px 180px;
+    background-color: var(--white);
+    text-align: center;
+
+}
+
+h2.ts{
+    max-width: 600px;
+}

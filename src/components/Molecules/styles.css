@@ -1,0 +1,9 @@
+.ref-links {
+    gap: 12px;
+}
+
+.work-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 40px;
+}

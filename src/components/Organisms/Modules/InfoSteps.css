@@ -1,0 +1,8 @@
+.features{
+    margin: 80px 180px;
+}
+
+.features-container{
+    background-color: var(--light-beige);
+    padding: 40px 0;
+}

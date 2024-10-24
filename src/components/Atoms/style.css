@@ -1,0 +1,172 @@
+.work-card{
+    margin: 5% 16%;
+    Padding: 28px 48px;
+    text-align: left;
+    /* width: 400px; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-color: var(--dark-beige);
+}
+
+img.work-card{
+    /* width: 100px; */
+    height: auto;
+}
+
+.work-img {
+    width: 100px;
+    height: auto;
+}
+
+.label-container{
+    /* gap: 4px; */
+    /* flex-wrap: wrap; */
+    justify-content: flex-end;
+    /* max-width: fit-content; */
+    flex-wrap: wrap;
+}
+.label{
+    background-color: var(--black);
+    border-radius: 20px;
+    color: var(--dark-beige);
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    opacity: 90%;
+
+}
+
+.dashed-line{
+    border: none;
+    border-top: 2px dashed var(--black);
+    opacity: 50%; 
+    width: 100%; 
+    margin:  18px 0 4px 0;
+}
+
+h2.stacked-text{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+p.stacked-text{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */  
+}
+
+div.sided-text{
+    flex-direction: flex-start;
+    align-items: center;
+}
+
+h2.sided-text{
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 18px;
+}
+
+
+p.sided-text{
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+
+strong.sided-text{
+    font-weight: 700;
+    color: var(--black)
+}
+
+.sl{
+    justify-items: center;
+    max-width: 250px;
+}
+
+strong.sl{
+    margin-top: 8px;
+}
+
+img.ist{
+    max-width: 400px;
+}
+
+h1.ist{
+    color: var(--accent-dark);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 6px 0;
+}
+
+h2.ist{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+}
+
+p.ist{
+    margin-bottom: 48px;
+}
+
+.fw{
+    width: 300px;
+    overflow-wrap: break-word; /* Allows breaking of long words */
+    word-wrap: break-word; /* Older property for compatibility */
+    overflow: hidden; /* Hides any overflow */
+    white-space: normal; /* Allows normal text wrapping */
+}
+
+
+/* 
+
+
+
+Archived:
+
+.work-card{
+    margin: 12px;
+    Padding: 48px 48px;
+    text-align: left;
+    width: 400px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+img.work-card{
+    width: 100px;
+    height: auto;
+}
+
+.work-img {
+    width: 100px;
+    height: auto;
+}
+
+.label-container{
+    gap: 4px;
+}
+.label{
+    background-color: var(--black);
+    border-radius: 20px;
+    color: var(--white);
+    height: 12px;
+    justify-content: center;
+    align-items: center;
+    padding:4px;
+
+}
+
+*/

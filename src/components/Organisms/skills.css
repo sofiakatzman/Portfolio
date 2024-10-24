@@ -1,0 +1,57 @@
+
+
+.skills-container{
+    background-color: var(--dark-beige);
+    text-align: center;
+    padding: 130px 200px;
+    justify-content: center; 
+    align-items: center;
+    max-width: 100%; 
+    /* margin: 0 auto; */
+}
+
+.skills-imgs{
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: center; */
+    /* gap: 30px; */
+    flex-wrap: wrap;
+    opacity: 75%;
+    /* width: 80%; */
+    max-width: 500px; 
+    /* margin: 0 auto; 
+    padding-top: 40px; */
+}
+
+.burst{
+    max-width: 400px;
+    margin-top: 32px;
+}
+
+.tool-container {
+    position: relative;
+    margin: 10px;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 120px; /* Adjust size as needed */
+    background-color: var(--white);
+    color: var(--black);
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    bottom: 100%; /* Position above the image */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1;
+    margin-bottom: 12px;
+}
+
+.tool-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}

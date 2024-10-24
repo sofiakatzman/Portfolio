@@ -1,0 +1,16 @@
+.intro-container{
+    align-items: center;
+    justify-content: center;
+    margin: 16% 12% 20% 12%;
+}
+
+.ref-links{
+    gap: 16px;
+}
+
+img.sk-headshot {
+    max-width: 100%; 
+    height: 30%;    
+    width: 30%;
+    padding-right: 10%;
+}

@@ -1,41 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-
-@font-face {
-  font-family: 'TropiLand';
-  src: local('TropiLand'), url(../public/fonts/TropiLand-L3MPg.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'MonteBold';
-  src: local('MonteBold'), url(../public/fonts/MontserratAlternates-Bold.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'MonteSemi';
-  src: local('MonteSemi'), url(../public/fonts/MontserratAlternates-SemiBold.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Monte';
-  src: local('Monte'), url(../public/fonts/MontserratAlternates-Regular.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'MonteMed';
-  src: local('MonteMed'), url(../public/fonts/MontserratAlternates-Medium.ttf) format('truetype');
-}
-
-@import "~react-image-gallery/styles/css/image-gallery.css";

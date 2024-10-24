@@ -1,0 +1,18 @@
+.navigation-container{
+    display: flex;
+    padding: 6px 104px;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    margin: 2% auto;
+    width: 470px;
+}
+
+.circle-divider {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: var(--black); 
+    border-radius: 50%; 
+    margin: 4px 50px; 
+}
