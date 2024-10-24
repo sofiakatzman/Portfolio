@@ -1,0 +1,39 @@
+.pp-container{
+    margin: 80px 180px 80px 180px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: flex-start;
+}
+.pp-img{
+    display: block; 
+    margin: 0 auto; 
+    width: 55%; 
+    margin-bottom: 32px;
+}
+
+h1.pp-description{
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px; 
+}
+
+p.pp-description{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+button.pp-description{
+    max-width: 460px;
+    background-color: var(--dark-beige);
+    /* margin: 24px 0px; */
+    padding: 12px;
+}
+
+.st{
+    margin-top: 32px;
+    margin-bottom: 24px;
+    gap:72px;
+}
