@@ -4,7 +4,7 @@ import "./Description.css"
 function Description({project}){
     return(
         <div className="pp-container">
-            <img src={project.image} className="pp-img"/>
+            <img src={project.image} className="pp-img" alt={`${project.name} img`}/>
             <div >
                 <h1 className="pp-description">{project.name}</h1>
                 <p className="pp-description">{project.summary}</p>
@@ -14,9 +14,9 @@ function Description({project}){
                 <StackedText title={"Technologies"} text={project.technologies}/>
                 <StackedText title={"APIs"} text={project.apis}/>
                 </div>
-                <button onClick={() => window.location.href=project.project_page_link} className="button pp-description">
+                {project.project_page_link && <button onClick={() => window.location.href=project.project_page_link} className="button pp-description">
                     {project.project_page_copy}
-                </button>
+                </button>}
             </div>
         </div>
     )
