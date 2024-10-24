@@ -7,6 +7,7 @@ import Navigation from "../src/components/Organisms/Navigation.js"
 import Tymoo from "./components/Pages/Work/Tymoo.js";
 import AssetGenerator from "./components/Pages/Work/AssetGenerator.js";
 import Scripts from "./components/Pages/Work/Scripts.js";
+import Work from "./components/Pages/Work.js";
 
 
 
@@ -28,6 +29,7 @@ function App() {
         ) : (
           <Routes>
             <Route path="/" element={<LandingPage />} />
+            <Route path="/work" element={<Work /> } />
             <Route path="/work/tymoo/" element={<Tymoo />} />
             <Route path="/work/asset-generator/" element={<AssetGenerator />} />
             <Route path="/work/scripts/" element={<Scripts />} />
