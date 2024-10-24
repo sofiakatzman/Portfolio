@@ -144,9 +144,18 @@ u {
 }
 
 .spacer{
-  margin-top:72px;
+  margin-top:112px;
 }
+
+.sm-spacer{
+  margin-top:64px;
+}
+
 
 .space-around{
   justify-content: space-around;
+}
+
+.m-gap{
+  gap: 15%;
 }
