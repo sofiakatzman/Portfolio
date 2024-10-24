@@ -1,7 +1,7 @@
 import StackedText from "./StackedText"
 import "./style.css"
 
-function InfoStep({eyebrow, heading, description, input, output, image}){
+function InfoStep({eyebrow, heading, description, input, output, image,}){
     return(
       
             <div className="flex-container spacer m-gap"> 
@@ -13,12 +13,12 @@ function InfoStep({eyebrow, heading, description, input, output, image}){
                         <div className="fw">
                             <StackedText title="User Input" text={input} />
                         </div>
-                        <div>
+                        { output && <div>
                             <StackedText title="App Output" text={output} />
-                        </div>
+                        </div>}
                     </div>
                 </div>
-                <img src={image} className="ist"/>
+                <img src={image} className="ist" alt={heading}/>
                
             </div>
             
