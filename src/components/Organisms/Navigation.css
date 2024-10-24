@@ -1,11 +1,11 @@
 .navigation-container{
     display: flex;
-    padding: 10px 100px;
+    padding: 6px 104px;
     justify-content: space-between;
     align-items: center;
     flex: 1 0 0;
-    margin: 4% auto;
-    width: 450px;
+    margin: 2% auto;
+    width: 470px;
 }
 
 .circle-divider {
