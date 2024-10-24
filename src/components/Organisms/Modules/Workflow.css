@@ -1,0 +1,8 @@
+.workflow{
+    padding: 80px 180px;
+    background-color: var(--dark-beige);
+}
+
+.phases{
+    max-width: 500px;
+}
